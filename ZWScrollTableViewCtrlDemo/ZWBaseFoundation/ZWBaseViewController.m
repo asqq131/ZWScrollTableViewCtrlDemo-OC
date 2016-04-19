@@ -29,6 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark 左侧导航按钮懒加载
 - (UIButton *)navLeftBtn {
     if (!_navLeftBtn) {
         UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -44,6 +45,7 @@
     return _navLeftBtn;
 }
 
+#pragma mark 右侧导航按钮懒加载
 - (UIButton *)navRightBtn {
     if (!_navRightBtn) {
         UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -59,6 +61,7 @@
     return _navRightBtn;
 }
 
+#pragma mark 网络请求失败view懒加载
 - (UIView *)reloadNetworkView {
     if (!_reloadNetworkView) {
         UIView *reloadCoverView = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -98,6 +101,7 @@
     return _reloadNetworkView;
 }
 
+#pragma mark 空数据view懒加载
 - (UIView *)emptyDataView {
     if (!_emptyDataView) {
         UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -112,6 +116,7 @@
     return _emptyDataView;
 }
 
+#pragma mark - Private 空数据提示图标懒加载
 - (UIImageView *)emptyDataVerifyImageView {
     if (!_emptyDataVerifyImageView) {
         UIImage *icon = [UIImage imageNamed:kRefreshSrcName(@"msg_ic_data")];
@@ -124,6 +129,7 @@
     return _emptyDataVerifyImageView;
 }
 
+#pragma mark Private 空数据提示语标懒加载
 - (UILabel *)emptyDataTipLabel {
     if (!_emptyDataTipLabel) {
         UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.emptyDataVerifyImageView.frame), kScreenSize.width, 20)];
@@ -137,6 +143,8 @@
     
     return _emptyDataTipLabel;
 }
+
+#pragma mark -
 
 - (void)reloadNetworkDataAction:(UIButton *)sender {
     NSLog(@"ZWViewController reloadNetworkData");
