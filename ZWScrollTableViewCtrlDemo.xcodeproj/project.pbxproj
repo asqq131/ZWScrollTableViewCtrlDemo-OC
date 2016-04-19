@@ -15,29 +15,13 @@
 		041E6F1D1CC6123B00E5070B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E6F1B1CC6123B00E5070B /* LaunchScreen.storyboard */; };
 		041E6F281CC6123B00E5070B /* ZWScrollTableViewCtrlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F271CC6123B00E5070B /* ZWScrollTableViewCtrlDemoTests.m */; };
 		041E6F331CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F321CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests.m */; };
-		041E6F481CC6129700E5070B /* RefreshImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 041E6F411CC6129700E5070B /* RefreshImages.bundle */; };
-		041E6F491CC6129700E5070B /* UITableView+EmpyFalseDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F431CC6129700E5070B /* UITableView+EmpyFalseDataView.m */; };
-		041E6F4A1CC6129700E5070B /* UIView+FixRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F451CC6129700E5070B /* UIView+FixRatio.m */; };
-		041E6F4B1CC6129700E5070B /* ZWScrollTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F471CC6129700E5070B /* ZWScrollTableViewCtrl.m */; };
-		041E6F791CC612A200E5070B /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F4F1CC612A200E5070B /* MJRefreshAutoFooter.m */; };
-		041E6F7A1CC612A200E5070B /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F511CC612A200E5070B /* MJRefreshBackFooter.m */; };
-		041E6F7B1CC612A200E5070B /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F531CC612A200E5070B /* MJRefreshComponent.m */; };
-		041E6F7C1CC612A200E5070B /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F551CC612A200E5070B /* MJRefreshFooter.m */; };
-		041E6F7D1CC612A200E5070B /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F571CC612A200E5070B /* MJRefreshHeader.m */; };
-		041E6F7E1CC612A200E5070B /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F5C1CC612A200E5070B /* MJRefreshAutoGifFooter.m */; };
-		041E6F7F1CC612A200E5070B /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F5E1CC612A200E5070B /* MJRefreshAutoNormalFooter.m */; };
-		041E6F801CC612A200E5070B /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F601CC612A200E5070B /* MJRefreshAutoStateFooter.m */; };
-		041E6F811CC612A200E5070B /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F631CC612A200E5070B /* MJRefreshBackGifFooter.m */; };
-		041E6F821CC612A200E5070B /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F651CC612A200E5070B /* MJRefreshBackNormalFooter.m */; };
-		041E6F831CC612A200E5070B /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F671CC612A200E5070B /* MJRefreshBackStateFooter.m */; };
-		041E6F841CC612A200E5070B /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F6A1CC612A200E5070B /* MJRefreshGifHeader.m */; };
-		041E6F851CC612A200E5070B /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F6C1CC612A200E5070B /* MJRefreshNormalHeader.m */; };
-		041E6F861CC612A200E5070B /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F6E1CC612A200E5070B /* MJRefreshStateHeader.m */; };
-		041E6F871CC612A200E5070B /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 041E6F6F1CC612A200E5070B /* MJRefresh.bundle */; };
-		041E6F881CC612A200E5070B /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F721CC612A200E5070B /* MJRefreshConst.m */; };
-		041E6F891CC612A200E5070B /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F741CC612A200E5070B /* UIScrollView+MJExtension.m */; };
-		041E6F8A1CC612A200E5070B /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F761CC612A200E5070B /* UIScrollView+MJRefresh.m */; };
-		041E6F8B1CC612A200E5070B /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F781CC612A200E5070B /* UIView+MJExtension.m */; };
+		041E6FAA1CC632DF00E5070B /* RefreshImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 041E6F9E1CC632DF00E5070B /* RefreshImages.bundle */; };
+		041E6FAB1CC632DF00E5070B /* UITableView+EmpyFalseDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6FA01CC632DF00E5070B /* UITableView+EmpyFalseDataView.m */; };
+		041E6FAC1CC632DF00E5070B /* UIView+FixRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6FA21CC632DF00E5070B /* UIView+FixRatio.m */; };
+		041E6FAD1CC632DF00E5070B /* ZWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6FA51CC632DF00E5070B /* ZWBaseViewController.m */; };
+		041E6FAE1CC632DF00E5070B /* ZWConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6FA71CC632DF00E5070B /* ZWConstant.m */; };
+		041E6FAF1CC632DF00E5070B /* ZWScrollTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6FA91CC632DF00E5070B /* ZWScrollTableViewCtrl.m */; };
+		436066F40D2DA21F3B9B0610 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BDE65A4761F577A4E83116 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,51 +58,21 @@
 		041E6F2E1CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWScrollTableViewCtrlDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041E6F321CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWScrollTableViewCtrlDemoUITests.m; sourceTree = "<group>"; };
 		041E6F341CC6123B00E5070B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		041E6F411CC6129700E5070B /* RefreshImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RefreshImages.bundle; sourceTree = "<group>"; };
-		041E6F421CC6129700E5070B /* UITableView+EmpyFalseDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmpyFalseDataView.h"; sourceTree = "<group>"; };
-		041E6F431CC6129700E5070B /* UITableView+EmpyFalseDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmpyFalseDataView.m"; sourceTree = "<group>"; };
-		041E6F441CC6129700E5070B /* UIView+FixRatio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FixRatio.h"; sourceTree = "<group>"; };
-		041E6F451CC6129700E5070B /* UIView+FixRatio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FixRatio.m"; sourceTree = "<group>"; };
-		041E6F461CC6129700E5070B /* ZWScrollTableViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWScrollTableViewCtrl.h; sourceTree = "<group>"; };
-		041E6F471CC6129700E5070B /* ZWScrollTableViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWScrollTableViewCtrl.m; sourceTree = "<group>"; };
-		041E6F4E1CC612A200E5070B /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
-		041E6F4F1CC612A200E5070B /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
-		041E6F501CC612A200E5070B /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
-		041E6F511CC612A200E5070B /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
-		041E6F521CC612A200E5070B /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
-		041E6F531CC612A200E5070B /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
-		041E6F541CC612A200E5070B /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
-		041E6F551CC612A200E5070B /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
-		041E6F561CC612A200E5070B /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
-		041E6F571CC612A200E5070B /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
-		041E6F5B1CC612A200E5070B /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
-		041E6F5C1CC612A200E5070B /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
-		041E6F5D1CC612A200E5070B /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
-		041E6F5E1CC612A200E5070B /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
-		041E6F5F1CC612A200E5070B /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
-		041E6F601CC612A200E5070B /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
-		041E6F621CC612A200E5070B /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
-		041E6F631CC612A200E5070B /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
-		041E6F641CC612A200E5070B /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
-		041E6F651CC612A200E5070B /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
-		041E6F661CC612A200E5070B /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
-		041E6F671CC612A200E5070B /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
-		041E6F691CC612A200E5070B /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
-		041E6F6A1CC612A200E5070B /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
-		041E6F6B1CC612A200E5070B /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
-		041E6F6C1CC612A200E5070B /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
-		041E6F6D1CC612A200E5070B /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
-		041E6F6E1CC612A200E5070B /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
-		041E6F6F1CC612A200E5070B /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
-		041E6F701CC612A200E5070B /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
-		041E6F711CC612A200E5070B /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
-		041E6F721CC612A200E5070B /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
-		041E6F731CC612A200E5070B /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
-		041E6F741CC612A200E5070B /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
-		041E6F751CC612A200E5070B /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
-		041E6F761CC612A200E5070B /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
-		041E6F771CC612A200E5070B /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
-		041E6F781CC612A200E5070B /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		041E6F9E1CC632DF00E5070B /* RefreshImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RefreshImages.bundle; sourceTree = "<group>"; };
+		041E6F9F1CC632DF00E5070B /* UITableView+EmpyFalseDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmpyFalseDataView.h"; sourceTree = "<group>"; };
+		041E6FA01CC632DF00E5070B /* UITableView+EmpyFalseDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmpyFalseDataView.m"; sourceTree = "<group>"; };
+		041E6FA11CC632DF00E5070B /* UIView+FixRatio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FixRatio.h"; sourceTree = "<group>"; };
+		041E6FA21CC632DF00E5070B /* UIView+FixRatio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FixRatio.m"; sourceTree = "<group>"; };
+		041E6FA31CC632DF00E5070B /* ZWBaseFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWBaseFoundation.h; sourceTree = "<group>"; };
+		041E6FA41CC632DF00E5070B /* ZWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWBaseViewController.h; sourceTree = "<group>"; };
+		041E6FA51CC632DF00E5070B /* ZWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWBaseViewController.m; sourceTree = "<group>"; };
+		041E6FA61CC632DF00E5070B /* ZWConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWConstant.h; sourceTree = "<group>"; };
+		041E6FA71CC632DF00E5070B /* ZWConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWConstant.m; sourceTree = "<group>"; };
+		041E6FA81CC632DF00E5070B /* ZWScrollTableViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWScrollTableViewCtrl.h; sourceTree = "<group>"; };
+		041E6FA91CC632DF00E5070B /* ZWScrollTableViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWScrollTableViewCtrl.m; sourceTree = "<group>"; };
+		1F3C8F0F64D577AD73E7844F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6B289629BCC9890AF298368D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B1BDE65A4761F577A4E83116 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436066F40D2DA21F3B9B0610 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +108,8 @@
 				041E6F261CC6123B00E5070B /* ZWScrollTableViewCtrlDemoTests */,
 				041E6F311CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests */,
 				041E6F0B1CC6123B00E5070B /* Products */,
+				1BAC17580A7E878E3D3A4335 /* Pods */,
+				7FAFAE0DA6AB4A9A8DE970C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,8 +126,7 @@
 		041E6F0C1CC6123B00E5070B /* ZWScrollTableViewCtrlDemo */ = {
 			isa = PBXGroup;
 			children = (
-				041E6F4C1CC612A200E5070B /* MJRefresh */,
-				041E6F401CC6129700E5070B /* ZWScrollTableViewCtrl */,
+				041E6F9D1CC632DF00E5070B /* ZWBaseFoundation */,
 				041E6F101CC6123B00E5070B /* AppDelegate.h */,
 				041E6F111CC6123B00E5070B /* AppDelegate.m */,
 				041E6F131CC6123B00E5070B /* ViewController.h */,
@@ -210,111 +166,40 @@
 			path = ZWScrollTableViewCtrlDemoUITests;
 			sourceTree = "<group>";
 		};
-		041E6F401CC6129700E5070B /* ZWScrollTableViewCtrl */ = {
+		041E6F9D1CC632DF00E5070B /* ZWBaseFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				041E6F411CC6129700E5070B /* RefreshImages.bundle */,
-				041E6F421CC6129700E5070B /* UITableView+EmpyFalseDataView.h */,
-				041E6F431CC6129700E5070B /* UITableView+EmpyFalseDataView.m */,
-				041E6F441CC6129700E5070B /* UIView+FixRatio.h */,
-				041E6F451CC6129700E5070B /* UIView+FixRatio.m */,
-				041E6F461CC6129700E5070B /* ZWScrollTableViewCtrl.h */,
-				041E6F471CC6129700E5070B /* ZWScrollTableViewCtrl.m */,
+				041E6F9E1CC632DF00E5070B /* RefreshImages.bundle */,
+				041E6F9F1CC632DF00E5070B /* UITableView+EmpyFalseDataView.h */,
+				041E6FA01CC632DF00E5070B /* UITableView+EmpyFalseDataView.m */,
+				041E6FA11CC632DF00E5070B /* UIView+FixRatio.h */,
+				041E6FA21CC632DF00E5070B /* UIView+FixRatio.m */,
+				041E6FA31CC632DF00E5070B /* ZWBaseFoundation.h */,
+				041E6FA41CC632DF00E5070B /* ZWBaseViewController.h */,
+				041E6FA51CC632DF00E5070B /* ZWBaseViewController.m */,
+				041E6FA61CC632DF00E5070B /* ZWConstant.h */,
+				041E6FA71CC632DF00E5070B /* ZWConstant.m */,
+				041E6FA81CC632DF00E5070B /* ZWScrollTableViewCtrl.h */,
+				041E6FA91CC632DF00E5070B /* ZWScrollTableViewCtrl.m */,
 			);
-			path = ZWScrollTableViewCtrl;
+			path = ZWBaseFoundation;
 			sourceTree = "<group>";
 		};
-		041E6F4C1CC612A200E5070B /* MJRefresh */ = {
+		1BAC17580A7E878E3D3A4335 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				041E6F4D1CC612A200E5070B /* Base */,
-				041E6F581CC612A200E5070B /* Custom */,
-				041E6F6F1CC612A200E5070B /* MJRefresh.bundle */,
-				041E6F701CC612A200E5070B /* MJRefresh.h */,
-				041E6F711CC612A200E5070B /* MJRefreshConst.h */,
-				041E6F721CC612A200E5070B /* MJRefreshConst.m */,
-				041E6F731CC612A200E5070B /* UIScrollView+MJExtension.h */,
-				041E6F741CC612A200E5070B /* UIScrollView+MJExtension.m */,
-				041E6F751CC612A200E5070B /* UIScrollView+MJRefresh.h */,
-				041E6F761CC612A200E5070B /* UIScrollView+MJRefresh.m */,
-				041E6F771CC612A200E5070B /* UIView+MJExtension.h */,
-				041E6F781CC612A200E5070B /* UIView+MJExtension.m */,
+				6B289629BCC9890AF298368D /* Pods.debug.xcconfig */,
+				1F3C8F0F64D577AD73E7844F /* Pods.release.xcconfig */,
 			);
-			path = MJRefresh;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		041E6F4D1CC612A200E5070B /* Base */ = {
+		7FAFAE0DA6AB4A9A8DE970C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				041E6F4E1CC612A200E5070B /* MJRefreshAutoFooter.h */,
-				041E6F4F1CC612A200E5070B /* MJRefreshAutoFooter.m */,
-				041E6F501CC612A200E5070B /* MJRefreshBackFooter.h */,
-				041E6F511CC612A200E5070B /* MJRefreshBackFooter.m */,
-				041E6F521CC612A200E5070B /* MJRefreshComponent.h */,
-				041E6F531CC612A200E5070B /* MJRefreshComponent.m */,
-				041E6F541CC612A200E5070B /* MJRefreshFooter.h */,
-				041E6F551CC612A200E5070B /* MJRefreshFooter.m */,
-				041E6F561CC612A200E5070B /* MJRefreshHeader.h */,
-				041E6F571CC612A200E5070B /* MJRefreshHeader.m */,
+				B1BDE65A4761F577A4E83116 /* libPods.a */,
 			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		041E6F581CC612A200E5070B /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				041E6F591CC612A200E5070B /* Footer */,
-				041E6F681CC612A200E5070B /* Header */,
-			);
-			path = Custom;
-			sourceTree = "<group>";
-		};
-		041E6F591CC612A200E5070B /* Footer */ = {
-			isa = PBXGroup;
-			children = (
-				041E6F5A1CC612A200E5070B /* Auto */,
-				041E6F611CC612A200E5070B /* Back */,
-			);
-			path = Footer;
-			sourceTree = "<group>";
-		};
-		041E6F5A1CC612A200E5070B /* Auto */ = {
-			isa = PBXGroup;
-			children = (
-				041E6F5B1CC612A200E5070B /* MJRefreshAutoGifFooter.h */,
-				041E6F5C1CC612A200E5070B /* MJRefreshAutoGifFooter.m */,
-				041E6F5D1CC612A200E5070B /* MJRefreshAutoNormalFooter.h */,
-				041E6F5E1CC612A200E5070B /* MJRefreshAutoNormalFooter.m */,
-				041E6F5F1CC612A200E5070B /* MJRefreshAutoStateFooter.h */,
-				041E6F601CC612A200E5070B /* MJRefreshAutoStateFooter.m */,
-			);
-			path = Auto;
-			sourceTree = "<group>";
-		};
-		041E6F611CC612A200E5070B /* Back */ = {
-			isa = PBXGroup;
-			children = (
-				041E6F621CC612A200E5070B /* MJRefreshBackGifFooter.h */,
-				041E6F631CC612A200E5070B /* MJRefreshBackGifFooter.m */,
-				041E6F641CC612A200E5070B /* MJRefreshBackNormalFooter.h */,
-				041E6F651CC612A200E5070B /* MJRefreshBackNormalFooter.m */,
-				041E6F661CC612A200E5070B /* MJRefreshBackStateFooter.h */,
-				041E6F671CC612A200E5070B /* MJRefreshBackStateFooter.m */,
-			);
-			path = Back;
-			sourceTree = "<group>";
-		};
-		041E6F681CC612A200E5070B /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				041E6F691CC612A200E5070B /* MJRefreshGifHeader.h */,
-				041E6F6A1CC612A200E5070B /* MJRefreshGifHeader.m */,
-				041E6F6B1CC612A200E5070B /* MJRefreshNormalHeader.h */,
-				041E6F6C1CC612A200E5070B /* MJRefreshNormalHeader.m */,
-				041E6F6D1CC612A200E5070B /* MJRefreshStateHeader.h */,
-				041E6F6E1CC612A200E5070B /* MJRefreshStateHeader.m */,
-			);
-			path = Header;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 041E6F371CC6123B00E5070B /* Build configuration list for PBXNativeTarget "ZWScrollTableViewCtrlDemo" */;
 			buildPhases = (
+				1634D6EACD2DB0B4BEB7DFCF /* Check Pods Manifest.lock */,
 				041E6F061CC6123B00E5070B /* Sources */,
 				041E6F071CC6123B00E5070B /* Frameworks */,
 				041E6F081CC6123B00E5070B /* Resources */,
+				69BD9929A6CEC600C728CF4B /* Embed Pods Frameworks */,
+				EA3B27F55322293584EE359C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -421,9 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				041E6F1D1CC6123B00E5070B /* LaunchScreen.storyboard in Resources */,
-				041E6F481CC6129700E5070B /* RefreshImages.bundle in Resources */,
+				041E6FAA1CC632DF00E5070B /* RefreshImages.bundle in Resources */,
 				041E6F1A1CC6123B00E5070B /* Assets.xcassets in Resources */,
-				041E6F871CC612A200E5070B /* MJRefresh.bundle in Resources */,
 				041E6F181CC6123B00E5070B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,35 +331,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1634D6EACD2DB0B4BEB7DFCF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69BD9929A6CEC600C728CF4B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA3B27F55322293584EE359C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		041E6F061CC6123B00E5070B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				041E6F151CC6123B00E5070B /* ViewController.m in Sources */,
-				041E6F791CC612A200E5070B /* MJRefreshAutoFooter.m in Sources */,
-				041E6F801CC612A200E5070B /* MJRefreshAutoStateFooter.m in Sources */,
-				041E6F831CC612A200E5070B /* MJRefreshBackStateFooter.m in Sources */,
-				041E6F491CC6129700E5070B /* UITableView+EmpyFalseDataView.m in Sources */,
-				041E6F861CC612A200E5070B /* MJRefreshStateHeader.m in Sources */,
+				041E6FAB1CC632DF00E5070B /* UITableView+EmpyFalseDataView.m in Sources */,
+				041E6FAF1CC632DF00E5070B /* ZWScrollTableViewCtrl.m in Sources */,
+				041E6FAD1CC632DF00E5070B /* ZWBaseViewController.m in Sources */,
 				041E6F121CC6123B00E5070B /* AppDelegate.m in Sources */,
-				041E6F8B1CC612A200E5070B /* UIView+MJExtension.m in Sources */,
-				041E6F841CC612A200E5070B /* MJRefreshGifHeader.m in Sources */,
-				041E6F891CC612A200E5070B /* UIScrollView+MJExtension.m in Sources */,
-				041E6F821CC612A200E5070B /* MJRefreshBackNormalFooter.m in Sources */,
-				041E6F4A1CC6129700E5070B /* UIView+FixRatio.m in Sources */,
-				041E6F7B1CC612A200E5070B /* MJRefreshComponent.m in Sources */,
-				041E6F7F1CC612A200E5070B /* MJRefreshAutoNormalFooter.m in Sources */,
-				041E6F4B1CC6129700E5070B /* ZWScrollTableViewCtrl.m in Sources */,
-				041E6F7E1CC612A200E5070B /* MJRefreshAutoGifFooter.m in Sources */,
-				041E6F7A1CC612A200E5070B /* MJRefreshBackFooter.m in Sources */,
+				041E6FAC1CC632DF00E5070B /* UIView+FixRatio.m in Sources */,
+				041E6FAE1CC632DF00E5070B /* ZWConstant.m in Sources */,
 				041E6F0F1CC6123B00E5070B /* main.m in Sources */,
-				041E6F7C1CC612A200E5070B /* MJRefreshFooter.m in Sources */,
-				041E6F8A1CC612A200E5070B /* UIScrollView+MJRefresh.m in Sources */,
-				041E6F881CC612A200E5070B /* MJRefreshConst.m in Sources */,
-				041E6F811CC612A200E5070B /* MJRefreshBackGifFooter.m in Sources */,
-				041E6F7D1CC612A200E5070B /* MJRefreshHeader.m in Sources */,
-				041E6F851CC612A200E5070B /* MJRefreshNormalHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +528,7 @@
 		};
 		041E6F381CC6123B00E5070B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B289629BCC9890AF298368D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZWScrollTableViewCtrlDemo/Info.plist;
@@ -621,6 +541,7 @@
 		};
 		041E6F391CC6123B00E5070B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F3C8F0F64D577AD73E7844F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZWScrollTableViewCtrlDemo/Info.plist;
@@ -698,6 +619,7 @@
 				041E6F391CC6123B00E5070B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041E6F3A1CC6123B00E5070B /* Build configuration list for PBXNativeTarget "ZWScrollTableViewCtrlDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +628,7 @@
 				041E6F3C1CC6123B00E5070B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041E6F3D1CC6123B00E5070B /* Build configuration list for PBXNativeTarget "ZWScrollTableViewCtrlDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +637,7 @@
 				041E6F3F1CC6123B00E5070B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

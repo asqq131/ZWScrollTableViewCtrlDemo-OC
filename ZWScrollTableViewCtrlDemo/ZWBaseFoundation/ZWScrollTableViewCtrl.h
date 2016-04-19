@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MJRefresh.h"
 #import "UITableView+EmpyFalseDataView.h"
+#import <MJRefresh/MJRefresh.h>
 
 @interface ZWScrollTableViewCtrl : UIViewController <UITableViewDataSource, UITableViewDelegate>
 

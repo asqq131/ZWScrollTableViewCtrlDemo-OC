@@ -8,15 +8,7 @@
 
 #import "ZWScrollTableViewCtrl.h"
 #import "UIView+FixRatio.h"
-
-#define kScreenSize [UIScreen mainScreen].applicationFrame.size
-#define kColorRGB(R,G,B,A) [UIColor colorWithRed:(R)/255.0f green:(G)/255.0f blue:(B)/255.0f alpha:(A)]
-#define kIsIphone4s (kScreenSize.height == (480-20))
-#define kEmptyDataTip @"当前没有更多的消息哦!"
-#define kNetworkConnectFailTip @"当前网络不太顺畅"
-
-// 图片路径
-#define kRefreshSrcName(file) [@"RefreshImages.bundle" stringByAppendingPathComponent:file]
+#import "ZWConstant.h"
 
 @interface ZWScrollTableViewCtrl () {
     __weak UILabel *_selectedLine;
