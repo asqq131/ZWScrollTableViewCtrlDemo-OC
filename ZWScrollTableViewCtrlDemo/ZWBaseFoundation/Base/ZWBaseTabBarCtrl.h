@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZWConstant.h"
 
 @class ZWFrostedRootViewCtrl;
 @interface ZWBaseTabBarCtrl : UITabBarController
 
 @property (weak, nonatomic) ZWFrostedRootViewCtrl *frostedRootViewController;
-
 @property (strong, nonatomic) UIPanGestureRecognizer *panGesture;
+
+- (void)menuViewCtrlDidSelectAt:(NSIndexPath *)indexPath;
 
 @end

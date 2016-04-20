@@ -8,6 +8,7 @@
 
 #import "ZWBaseTabBarCtrl.h"
 #import "ZWFrostedRootViewCtrl.h"
+#import "ZWConstant.h"
 
 @interface ZWBaseTabBarCtrl () {
     
@@ -25,7 +26,7 @@
 //    [self setupTabBar];
     
     //添加当前类对象为一个观察者，name和object设置为nil，表示接收一切通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(goMenuViewController:) name:kNotificationNameByMenuSelected object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuViewCtrlAtNotification:) name:kNotificationNameByMenuSelected object:nil];
 
 #pragma mark 测试调用，实际应该在嵌入tabBarCtrl中的控制器调用
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -65,9 +66,15 @@
 }
 
 #pragma mark - 获取侧滑菜单点击通知，进行页面切换
-- (void)goMenuViewController:(NSNotification *)sender {
+- (void)menuViewCtrlAtNotification:(NSNotification *)sender {
     NSIndexPath *indexPath = sender.object; // 获取切换点击行
+    [self menuViewCtrlDidSelectAt:indexPath];
+}
+
+- (void)menuViewCtrlDidSelectAt:(NSIndexPath *)indexPath {
+    NSLog(@"ZWBaseTabBarCtrl menuViewCtrlDidSelectAt");
     
+#pragma mark 侧滑菜单响应处理示例 -> 可复写
     UINavigationController *navigationCtrl = self.viewControllers[self.selectedIndex];
     navigationCtrl.topViewController.hidesBottomBarWhenPushed = YES;
     

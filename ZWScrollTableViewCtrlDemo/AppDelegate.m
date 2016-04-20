@@ -17,8 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ZWFrostedRootViewCtrl *rootViewCtrl = [[ZWFrostedRootViewCtrl alloc] init];
-    self.window.rootViewController = rootViewCtrl;
+//    ZWFrostedRootViewCtrl *rootViewCtrl = [[ZWFrostedRootViewCtrl alloc] init];
+//    self.window.rootViewController = rootViewCtrl;
     
     return YES;
 }

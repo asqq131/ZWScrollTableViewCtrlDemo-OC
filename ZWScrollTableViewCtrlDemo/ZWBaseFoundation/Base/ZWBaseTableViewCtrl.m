@@ -16,9 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    CGFloat tableVewHeight = kScreenSize.height + 20 - 64;
+    if (self.navigationController.viewControllers.firstObject.class == self.class) {
+        tableVewHeight = kScreenSize.height - 44;
+    }
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenSize.width, tableVewHeight)];
     tableView.tableFooterView = [[UIView alloc] init];
     tableView.delegate = self;
     tableView.dataSource = self;
