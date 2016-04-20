@@ -7,38 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "AFHTTPRequestOperationManager.h"
 #import <AFNetworking/AFNetworking.h>
-#import "ZWConstant.h"
 
 @interface NetworkClient : NSObject
 
 //+ (instancetype)client;
 
-//- (AFHTTPRequestOperation*)request:(NSString*)method
-//                               url:(NSString*)url
-//                        parameters:(NSDictionary *)parameters
-//                       cachePolicy:(NSURLRequestCachePolicy)cachePolicy
-//                           success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-//                           failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
-
-//- (AFHTTPRequestOperation *)requestGetByParamsString:(NSString *)paramsString
-//                                          parameters:(NSDictionary *)parameters
-//                                         cachePolicy:(NSURLRequestCachePolicy)cachePolicy
-//                                             success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-//                                             failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
-//
-//- (AFHTTPRequestOperation *)requestPostByParamsString:(NSString *)paramsString
-//                                           parameters:(NSDictionary *)parameters
-//                                          cachePolicy:(NSURLRequestCachePolicy)cachePolicy
-//                                              success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-//                                              failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
-//
-//- (AFHTTPRequestOperation *)requestDeleteByParamsString:(NSString *)paramsString
-//                                           parameters:(NSDictionary *)parameters
-//                                          cachePolicy:(NSURLRequestCachePolicy)cachePolicy
-//                                              success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-//                                              failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 + (nullable NSURLSessionDataTask *)requestGetByUrlString:(NSString * _Nullable)urlString
                         parameters:(NSDictionary * _Nullable)parameters
                             success:(nullable void (^)(NSURLSessionDataTask * _Nullable task, id _Nullable))success

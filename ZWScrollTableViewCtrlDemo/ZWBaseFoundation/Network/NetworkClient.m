@@ -10,6 +10,7 @@
 #import "NSString+ThreeDES.h"
 #import "NSString+MD5Encrypt.h"
 #import "RSAEncryptor.h"
+#import "ZWConstant.h"
 
 @implementation NetworkClient
 
@@ -32,31 +33,6 @@
 //        self.responseSerializer = [AFJSONResponseSerializer serializer];
 //    }
 //    return self;
-//}
-
-#pragma mark 通用网络请求接口
-//- (AFHTTPRequestOperation *)request:(NSString*)method
-//                                url:(NSString*)url
-//                         parameters:(NSDictionary *)parameters
-//                        cachePolicy:(NSURLRequestCachePolicy)cachePolicy
-//                            success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-//                            failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
-//{
-//    NSMutableURLRequest *request =
-//    [self.requestSerializer requestWithMethod:method
-//                                    URLString:url
-//                                   parameters:parameters
-//                                        error:nil];
-//    request.cachePolicy = cachePolicy;
-//    
-//    AFHTTPRequestOperation *operation = [self HTTPRequestOperationWithRequest:request success:success failure:failure];
-//    [self.operationQueue addOperation:operation];
-//    
-//    return operation;
-//    
-//    NSError *error;
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    [manager.requestSerializer requestWithMethod:method URLString:url parameters:parameters error:&error];
 //}
 
 #pragma mark 网络请求GET类方法

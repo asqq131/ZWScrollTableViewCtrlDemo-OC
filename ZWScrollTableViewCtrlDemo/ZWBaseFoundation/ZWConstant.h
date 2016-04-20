@@ -11,6 +11,7 @@
 @interface ZWConstant : NSObject
 
 #define kMainAPIDomain @""
+#define kAppItunesId @""
 
 #define kIsiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
@@ -33,6 +34,9 @@
 #define kEmptyDataTip @"当前没有更多的消息哦!"
 
 // 图片路径
-#define kRefreshSrcName(file) [@"RefreshImages.bundle" stringByAppendingPathComponent:file]
+#define kResourceSrcName(file) [@"ResourceImages.bundle" stringByAppendingPathComponent:file]
+
+// 通知
+#define kNotificationNameByMenuSelected @"MenuSelectedNotification"
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "NetworkClientHelper.h"
+#import "ZWConstant.h"
+#import "NetworkClient.h"
 
 @implementation NetworkClientHelper
 

@@ -7,12 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-
-//#import "AFHTTPRequestOperationManager.h"
 #import "AFURLRequestSerialization.h"
-#import "ZWConstant.h"
-#import "NetworkClient.h"
 
 @interface NetworkClientHelper : NSObject
 /**

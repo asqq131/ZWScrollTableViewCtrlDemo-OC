@@ -49,7 +49,7 @@
     emptyDataView.userInteractionEnabled = NO;
     emptyDataView.hidden = YES;
     
-    UIImage *icon = [UIImage imageNamed:kRefreshSrcName(@"msg_ic_data")];
+    UIImage *icon = [UIImage imageNamed:kResourceSrcName(@"msg_ic_data")];
     UIImageView *verifyImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenSize.width/2 - icon.size.width/2, kScreenSize.height / 2 - [UIView fixRatioHeightByIphone6:icon.size.height] * 2, icon.size.width, icon.size.height)];
     verifyImageView.image = icon;
     [emptyDataView addSubview:verifyImageView];
@@ -70,7 +70,7 @@
     view.backgroundColor = [UIColor whiteColor];
     view.hidden = YES;
     
-    UIImage *icon = [UIImage imageNamed:kRefreshSrcName(@"msg_network")];
+    UIImage *icon = [UIImage imageNamed:kResourceSrcName(@"msg_network")];
     UIImageView *verifyImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenSize.width/2 - icon.size.width/2, kScreenSize.height / 2 - [UIView fixRatioHeightByIphone6:icon.size.height * 2], icon.size.width, icon.size.height)];
     verifyImageView.image = icon;
     verifyImageView.userInteractionEnabled = NO;
@@ -85,8 +85,8 @@
     
     UIButton *reloadButton = [UIButton buttonWithType:UIButtonTypeCustom];
     reloadButton.frame = CGRectMake((kScreenSize.width - 112) / 2, CGRectGetMaxY(tipLabel.frame) + 13, 112, 32);
-    [reloadButton setImage:[UIImage imageNamed:kRefreshSrcName(@"msg_ic_loading")] forState:UIControlStateNormal];
-    [reloadButton setImage:[UIImage imageNamed:kRefreshSrcName(@"msg_ic_loading_sel")] forState:UIControlStateSelected];
+    [reloadButton setImage:[UIImage imageNamed:kResourceSrcName(@"msg_ic_loading")] forState:UIControlStateNormal];
+    [reloadButton setImage:[UIImage imageNamed:kResourceSrcName(@"msg_ic_loading_sel")] forState:UIControlStateSelected];
     [reloadButton addTarget:self action:@selector(tableNetworkReloadDataAction:) forControlEvents:UIControlEventTouchUpInside];
     [view addSubview:reloadButton];
     

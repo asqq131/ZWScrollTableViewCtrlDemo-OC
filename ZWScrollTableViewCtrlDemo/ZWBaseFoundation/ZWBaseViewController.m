@@ -119,7 +119,7 @@
 #pragma mark - Private 空数据提示图标懒加载
 - (UIImageView *)emptyDataVerifyImageView {
     if (!_emptyDataVerifyImageView) {
-        UIImage *icon = [UIImage imageNamed:kRefreshSrcName(@"msg_ic_data")];
+        UIImage *icon = [UIImage imageNamed:kResourceSrcName(@"msg_ic_data")];
         UIImageView *verifyImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenSize.width/2 - icon.size.width/2, kScreenSize.height / 2 - [UIView fixRatioHeightByIphone6:icon.size.height] / 2, icon.size.width, icon.size.height)];
         verifyImageView.image = icon;
         
