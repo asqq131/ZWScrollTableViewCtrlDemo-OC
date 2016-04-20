@@ -10,6 +10,8 @@
 
 @interface ZWConstant : NSObject
 
+#define kMainAPIDomain @""
+
 #define kIsiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #define kColorRGB(R,G,B,A) [UIColor colorWithRed:(R)/255.0f green:(G)/255.0f blue:(B)/255.0f alpha:(A)]
