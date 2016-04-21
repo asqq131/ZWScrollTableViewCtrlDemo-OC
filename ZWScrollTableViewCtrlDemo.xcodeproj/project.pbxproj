@@ -40,6 +40,8 @@
 		044EECA91CC76A1100E4E07A /* ZWBaseTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EECA21CC76A1100E4E07A /* ZWBaseTableViewCtrl.m */; };
 		044EECAA1CC76A1100E4E07A /* ZWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EECA41CC76A1100E4E07A /* ZWBaseViewController.m */; };
 		044EECAB1CC76A1100E4E07A /* ZWScrollTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EECA61CC76A1100E4E07A /* ZWScrollTableViewCtrl.m */; };
+		045619C51CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045619C31CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m */; };
+		045619C61CC8834A00069B7A /* ZWScrollHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045619C41CC8834A00069B7A /* ZWScrollHeaderCollectionCell.xib */; };
 		436066F40D2DA21F3B9B0610 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BDE65A4761F577A4E83116 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +127,9 @@
 		044EECA41CC76A1100E4E07A /* ZWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWBaseViewController.m; sourceTree = "<group>"; };
 		044EECA51CC76A1100E4E07A /* ZWScrollTableViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWScrollTableViewCtrl.h; sourceTree = "<group>"; };
 		044EECA61CC76A1100E4E07A /* ZWScrollTableViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWScrollTableViewCtrl.m; sourceTree = "<group>"; };
+		045619C21CC8834A00069B7A /* ZWScrollHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWScrollHeaderCollectionCell.h; sourceTree = "<group>"; };
+		045619C31CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWScrollHeaderCollectionCell.m; sourceTree = "<group>"; };
+		045619C41CC8834A00069B7A /* ZWScrollHeaderCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWScrollHeaderCollectionCell.xib; sourceTree = "<group>"; };
 		1F3C8F0F64D577AD73E7844F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6B289629BCC9890AF298368D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B1BDE65A4761F577A4E83116 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -310,6 +315,7 @@
 		044EEC9C1CC76A1100E4E07A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				045619C11CC8834A00069B7A /* Cell */,
 				044EEC9D1CC76A1100E4E07A /* ZWBaseNavigationCtrl.h */,
 				044EEC9E1CC76A1100E4E07A /* ZWBaseNavigationCtrl.m */,
 				044EEC9F1CC76A1100E4E07A /* ZWBaseTabBarCtrl.h */,
@@ -322,6 +328,16 @@
 				044EECA61CC76A1100E4E07A /* ZWScrollTableViewCtrl.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		045619C11CC8834A00069B7A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				045619C21CC8834A00069B7A /* ZWScrollHeaderCollectionCell.h */,
+				045619C31CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m */,
+				045619C41CC8834A00069B7A /* ZWScrollHeaderCollectionCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1BAC17580A7E878E3D3A4335 /* Pods */ = {
@@ -448,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044EEC9B1CC764F400E4E07A /* MenuTableViewCell480.xib in Resources */,
+				045619C61CC8834A00069B7A /* ZWScrollHeaderCollectionCell.xib in Resources */,
 				041E6F1D1CC6123B00E5070B /* LaunchScreen.storyboard in Resources */,
 				044EEC8A1CC7318600E4E07A /* ResourceImages.bundle in Resources */,
 				044EEC7F1CC72F5B00E4E07A /* MenuTableHeaderView.xib in Resources */,
@@ -535,6 +552,7 @@
 				044EEC611CC724B600E4E07A /* NetworkClientHelper.m in Sources */,
 				044EECA91CC76A1100E4E07A /* ZWBaseTableViewCtrl.m in Sources */,
 				044EEC5A1CC715B600E4E07A /* RSAEncryptor.m in Sources */,
+				045619C51CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m in Sources */,
 				044EEC7D1CC72F5B00E4E07A /* ZWFrostedRootViewCtrl.m in Sources */,
 				044EECA71CC76A1100E4E07A /* ZWBaseNavigationCtrl.m in Sources */,
 				044EECA81CC76A1100E4E07A /* ZWBaseTabBarCtrl.m in Sources */,

@@ -9,9 +9,15 @@
 #import "ZWScrollTableViewCtrl.h"
 #import "UIView+FixRatio.h"
 #import "ZWConstant.h"
+#import "ZWScrollHeaderCollectionCell.h"
 
-@interface ZWScrollTableViewCtrl () {
+#define kMaxCollectionItemCount 3
+
+@interface ZWScrollTableViewCtrl () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout> {
     __weak UILabel *_selectedLine;
+    
+    NSInteger _currentSelectItemIndex;
+    NSInteger _collectionItemCount;
 }
 
 @end
@@ -21,21 +27,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initGUI];
+//    [self initGUI];
 }
 
 - (void)initGUI {
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, kScreenSize.width, 44)];
-    headerView.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:_headerView = headerView];
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, kScreenSize.width, 44) collectionViewLayout:flowLayout];
+    collectionView.backgroundColor = [UIColor whiteColor];
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
+    collectionView.showsHorizontalScrollIndicator = NO;
+    [collectionView registerNib:[UINib nibWithNibName:@"ZWScrollHeaderCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"ZWScrollHeaderCollectionCell"];
+    [self.view addSubview:_collectionView = collectionView];
     
-    UILabel *headerViewBottomLine = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(headerView.frame) - 0.5, CGRectGetWidth(headerView.frame), 0.5)];
-    headerViewBottomLine.backgroundColor = kColorRGB(232, 232, 232, 1);
-    [headerView addSubview:headerViewBottomLine];
-    
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(headerView.frame), kScreenSize.width, kScreenSize.height - CGRectGetHeight(headerView.frame) - 44)];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(collectionView.frame), kScreenSize.width, kScreenSize.height - CGRectGetHeight(collectionView.frame) - 44)];
     scrollView.backgroundColor = [UIColor whiteColor];
     scrollView.pagingEnabled = YES;
     scrollView.showsHorizontalScrollIndicator = NO;
@@ -95,29 +103,13 @@
 
 #pragma mark 按传入的count个数初始化tableView以及导航按钮
 - (void)setUpTableViewAtCount:(NSInteger)count {
+    [self initGUI];
+    
     _tableViewCount = count;
     
     NSMutableArray *btns = [NSMutableArray array];
     NSMutableArray *tableViews = [NSMutableArray array];
     for (int i = 0; i < count; i++) {
-        // init button
-        UIButton *headerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        headerBtn.frame = CGRectMake(CGRectGetWidth(_headerView.frame) / count * i, 0, CGRectGetWidth(_headerView.frame) / count, CGRectGetHeight(_headerView.frame) - 1.0);
-        headerBtn.backgroundColor = [UIColor whiteColor];
-        [headerBtn setTitleColor:kColorRGB(51, 51, 51, 1) forState:UIControlStateNormal];
-        [headerBtn setTitleColor:kColorRGB(54, 201, 251, 1) forState:UIControlStateSelected];
-        headerBtn.titleLabel.font = [UIFont systemFontOfSize: kIsIphone4s ? 14 : 16];
-        [headerBtn setTitle:[NSString stringWithFormat:@"btn%d", i] forState:UIControlStateNormal];
-        headerBtn.selected = i == 0;
-        [headerBtn addTarget:self action:@selector(headerBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-        [_headerView addSubview:headerBtn];
-        [btns addObject:headerBtn]; // 存入临时按钮集合
-        
-        // 导航按钮之间的分割线
-        UILabel *separatorLine = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(_headerView.frame) / count * i, 10, 0.5, CGRectGetHeight(_headerView.frame) - 20)];
-        separatorLine.backgroundColor = kColorRGB(232, 232, 232, 1);
-        [_headerView addSubview:separatorLine];
-        
         // init tableView
         UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(kScreenSize.width * i, 0, kScreenSize.width, CGRectGetHeight(_scrollView.frame))];
         tableView.tableFooterView = [[UIView alloc] init];
@@ -140,11 +132,32 @@
     _tableViews = tableViews; // 赋值给tableView集合对象，供外部访问
     
     // 按钮底部选中线
-    UILabel *selectedLine = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(_headerView.frame) - 2.0, CGRectGetWidth(_headerView.frame) / count, 2.0)];
+    _collectionItemCount = count > kMaxCollectionItemCount ? kMaxCollectionItemCount : count;
+    CGFloat itemWidth = CGRectGetWidth(_collectionView.frame) / _collectionItemCount;
+    UILabel *selectedLine = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(_collectionView.frame) - 2.0, itemWidth, 2.0)];
     selectedLine.backgroundColor = kColorRGB(54, 201, 251, 1);
-    [_headerView addSubview:_selectedLine = selectedLine];
+    [_collectionView addSubview:_selectedLine = selectedLine];
+    
+    UILabel *collectionViewBottomLine = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(_collectionView.frame) - 0.5, itemWidth * count, 0.5)];
+    collectionViewBottomLine.backgroundColor = kColorRGB(232, 232, 232, 1);
+    [_collectionView addSubview:collectionViewBottomLine];
     
     _scrollView.contentSize = CGSizeMake(kScreenSize.width*count, CGRectGetHeight(_scrollView.frame));
+}
+
+- (void)setUpTableViewAtCount:(NSInteger)count navTitles:(NSArray *)titles {
+    [self setUpTableViewAtCount:count];
+    
+    self.navTitles = titles;
+}
+
+- (void)setNavTitles:(NSArray *)navTitles {
+    if (navTitles.count != _tableViewCount) {
+        [self showTipWithString:@"导航按钮数目与列表数不一致"];
+    } else {
+        _navTitles = navTitles;
+        [_collectionView reloadData];
+    }
 }
 
 #pragma mark 根据tableView设置下拉刷新
@@ -163,13 +176,15 @@
 #pragma mark 下拉刷新触发函数
 - (void)tableViewPullDownRefresh {
     NSInteger index = _scrollView.contentOffset.x / kScreenSize.width;
-    [self tableViewPullDownRefresh:[_tableViews objectAtIndex:index]];
+    UITableView *tableView = _tableViews.count > index ? [_tableViews objectAtIndex:index] : nil;
+    [self tableViewPullDownRefresh:tableView];
 }
 
 #pragma mark 上拉刷新触发函数
 - (void)tableViewPullUpRefresh {
     NSInteger index = _scrollView.contentOffset.x / kScreenSize.width;
-    [self tableViewPullUpRefresh:[_tableViews objectAtIndex:index]];
+    UITableView *tableView = _tableViews.count > index ? [_tableViews objectAtIndex:index] : nil;
+    [self tableViewPullUpRefresh:tableView];
 }
 
 #pragma mark 下拉刷新对外访问函数，提供tableView
@@ -198,40 +213,25 @@
     return cell;
 }
 
-#pragma mark 导航按钮触发函数
-- (void)headerBtnAction:(UIButton *)sender {
-    if (sender.selected) return;
-    
-    sender.selected = YES;
-    NSInteger index = [_headerNavBtns indexOfObject:sender];
-    [_scrollView setContentOffset:CGPointMake(kScreenSize.width * index, 0) animated:YES];
-    [self setUpHeaderBtnSelectedAtIndex:index]; // 根据selected调整所有导航按钮样式
-    
-    [self headerBtn:sender didSelectAtIndex:index]; // 调用对外按钮访问函数
-}
-
 #pragma mark scrollView delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (scrollView != self.scrollView) return;
     
     CGRect rect = _selectedLine.frame;
-    rect.origin.x = scrollView.contentOffset.x / _tableViewCount;
+    rect.origin.x = scrollView.contentOffset.x / _collectionItemCount;
     _selectedLine.frame = rect;
+    
+//    _collectionView.contentOffset = CGPointMake(scrollView.contentOffset.x / _collectionItemCount / 2, 0);
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if (scrollView != self.scrollView) return;
     
     NSInteger page = scrollView.contentOffset.x / kScreenSize.width;
-    [self setUpHeaderBtnSelectedAtIndex:page];
-}
-
-#pragma mark 根据传入索引调整所有导航按钮样式
-- (void)setUpHeaderBtnSelectedAtIndex:(NSInteger)index {
-    for (int i = 0; i < _headerNavBtns.count; i++) {
-        UIButton *btn = _headerNavBtns[i];
-        btn.selected = i == index;
-    }
+    _currentSelectItemIndex = page;
+    
+    [self updateCollectionViewOffsetAtIndexPath:[NSIndexPath indexPathForRow:_currentSelectItemIndex inSection:0]];
+    [_collectionView reloadData];
 }
 
 #pragma mark tableVew网络访问错误触发函数
@@ -244,9 +244,63 @@
     NSLog(@"ZWScrollTableViewCtrlViewController tableNetworkReloadDataAction");
 }
 
-#pragma mark 导航按钮统一对外访问函数
-- (void)headerBtn:(UIButton *)sender didSelectAtIndex:(NSInteger)index {
-    NSLog(@"ZWScrollTableViewCtrlViewController didSelectAtIndex");
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return _tableViewCount;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    ZWScrollHeaderCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ZWScrollHeaderCollectionCell" forIndexPath:indexPath];
+    
+    cell.itemBtn.selected = _currentSelectItemIndex == indexPath.row;
+    cell.separatorLine.hidden = _tableViewCount - 1 == indexPath.row;
+    
+    if (_navTitles && _navTitles.count == _tableViewCount) {
+        [cell.itemBtn setTitle:_navTitles[indexPath.row] forState:UIControlStateNormal];
+    }
+    
+    return cell;
+}
+
+#pragma mark - collectionView delegate and datasource
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return 0;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    return 0;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger count = _tableViewCount > kMaxCollectionItemCount ? kMaxCollectionItemCount : _tableViewCount;
+    return CGSizeMake(kScreenSize.width / count, CGRectGetHeight(collectionView.frame));
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    _currentSelectItemIndex = indexPath.row;
+    
+    [_scrollView setContentOffset:CGPointMake(kScreenSize.width * _currentSelectItemIndex, 0) animated:YES];
+    
+    [self updateCollectionViewOffsetAtIndexPath:indexPath];
+    [self headerBtnDidSelectAtIndex:indexPath]; // 调用对外按钮访问函数
+    
+    [collectionView reloadData];
+}
+
+- (void)updateCollectionViewOffsetAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat itemWidth = kScreenSize.width / _collectionItemCount;
+    CGFloat itemOffset = itemWidth * indexPath.row;
+    CGFloat centerOffset = itemOffset + itemWidth / 2 - self.view.center.x;
+    if (indexPath.row == 0) {
+        centerOffset = 0;
+    } else if (indexPath.row == _tableViewCount - 1) {
+        centerOffset = itemOffset + itemWidth - kScreenSize.width;
+    }
+    
+    [_collectionView setContentOffset:CGPointMake(centerOffset, 0) animated:YES];
+}
+
+- (void)headerBtnDidSelectAtIndex:(NSIndexPath *)indexPath {
+//    NSLog(@"ZWScrollTableViewCtrlViewController didSelectAtIndex at %@", indexPath);
 }
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZWBaseFoundation/ZWBaseFoundation.h"
+#import "ZWScrollTableViewCtrl.h"
 
 @interface ViewController : ZWScrollTableViewCtrl
 
