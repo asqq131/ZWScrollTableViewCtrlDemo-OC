@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
 //    [self setUpTableViewAtCount:6];
-    [self setUpTableViewAtCount:6 navTitles:@[@"按钮1", @"按钮2", @"按钮3", @"按钮4", @"按钮5", @"按钮6"]];
+    [self setUpTableViewAtCount:6 navTitles:@[@"按钮1", @"按钮2", @"按钮3", @"按钮4", @"按钮5", @"按钮6", @"按钮7"]];
     
 //    [self.tableViews[0] getNetworkReloadViewKey].hidden = NO;
 //    [self.tableViews[2] getEmptyDataViewKey].hidden = NO;

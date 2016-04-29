@@ -30,7 +30,6 @@
 		044EEC7F1CC72F5B00E4E07A /* MenuTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044EEC6D1CC72F5B00E4E07A /* MenuTableHeaderView.xib */; };
 		044EEC831CC72F5B00E4E07A /* ZWMenuTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EEC731CC72F5B00E4E07A /* ZWMenuTableViewCtrl.m */; };
 		044EEC8A1CC7318600E4E07A /* ResourceImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 044EEC891CC7318600E4E07A /* ResourceImages.bundle */; };
-		044EEC921CC761DE00E4E07A /* UITableView+EmpyFalseDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EEC8F1CC761DE00E4E07A /* UITableView+EmpyFalseDataView.m */; };
 		044EEC931CC761DE00E4E07A /* UIView+FixRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EEC911CC761DE00E4E07A /* UIView+FixRatio.m */; };
 		044EEC991CC764F400E4E07A /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EEC961CC764F400E4E07A /* MenuTableViewCell.m */; };
 		044EEC9A1CC764F400E4E07A /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044EEC971CC764F400E4E07A /* MenuTableViewCell.xib */; };
@@ -42,6 +41,10 @@
 		044EECAB1CC76A1100E4E07A /* ZWScrollTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EECA61CC76A1100E4E07A /* ZWScrollTableViewCtrl.m */; };
 		045619C51CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 045619C31CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m */; };
 		045619C61CC8834A00069B7A /* ZWScrollHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045619C41CC8834A00069B7A /* ZWScrollHeaderCollectionCell.xib */; };
+		048898EF1CD35B7D00CDAF27 /* NSString+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 048898EA1CD35B7D00CDAF27 /* NSString+CalculateSize.m */; };
+		048898F01CD35B7D00CDAF27 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 048898EC1CD35B7D00CDAF27 /* UIScrollView+Refresh.m */; };
+		048898F11CD35B7D00CDAF27 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 048898EE1CD35B7D00CDAF27 /* UIViewController+HUD.m */; };
+		048898F41CD35C0600CDAF27 /* UIView+EmpyFalseDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048898F31CD35C0600CDAF27 /* UIView+EmpyFalseDataView.m */; };
 		436066F40D2DA21F3B9B0610 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BDE65A4761F577A4E83116 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -109,8 +112,6 @@
 		044EEC721CC72F5B00E4E07A /* ZWMenuTableViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWMenuTableViewCtrl.h; sourceTree = "<group>"; };
 		044EEC731CC72F5B00E4E07A /* ZWMenuTableViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWMenuTableViewCtrl.m; sourceTree = "<group>"; };
 		044EEC891CC7318600E4E07A /* ResourceImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ResourceImages.bundle; sourceTree = "<group>"; };
-		044EEC8E1CC761DE00E4E07A /* UITableView+EmpyFalseDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmpyFalseDataView.h"; sourceTree = "<group>"; };
-		044EEC8F1CC761DE00E4E07A /* UITableView+EmpyFalseDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmpyFalseDataView.m"; sourceTree = "<group>"; };
 		044EEC901CC761DE00E4E07A /* UIView+FixRatio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FixRatio.h"; sourceTree = "<group>"; };
 		044EEC911CC761DE00E4E07A /* UIView+FixRatio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FixRatio.m"; sourceTree = "<group>"; };
 		044EEC951CC764F400E4E07A /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
@@ -130,6 +131,14 @@
 		045619C21CC8834A00069B7A /* ZWScrollHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWScrollHeaderCollectionCell.h; sourceTree = "<group>"; };
 		045619C31CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWScrollHeaderCollectionCell.m; sourceTree = "<group>"; };
 		045619C41CC8834A00069B7A /* ZWScrollHeaderCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWScrollHeaderCollectionCell.xib; sourceTree = "<group>"; };
+		048898E91CD35B7D00CDAF27 /* NSString+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculateSize.h"; sourceTree = "<group>"; };
+		048898EA1CD35B7D00CDAF27 /* NSString+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculateSize.m"; sourceTree = "<group>"; };
+		048898EB1CD35B7D00CDAF27 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		048898EC1CD35B7D00CDAF27 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		048898ED1CD35B7D00CDAF27 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		048898EE1CD35B7D00CDAF27 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		048898F21CD35C0600CDAF27 /* UIView+EmpyFalseDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmpyFalseDataView.h"; sourceTree = "<group>"; };
+		048898F31CD35C0600CDAF27 /* UIView+EmpyFalseDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmpyFalseDataView.m"; sourceTree = "<group>"; };
 		1F3C8F0F64D577AD73E7844F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6B289629BCC9890AF298368D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B1BDE65A4761F577A4E83116 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,10 +260,16 @@
 				044EEC441CC7139F00E4E07A /* NSString+GenerateUuid.m */,
 				044EEC471CC7139F00E4E07A /* UIImage+IMTransform.h */,
 				044EEC481CC7139F00E4E07A /* UIImage+IMTransform.m */,
-				044EEC8E1CC761DE00E4E07A /* UITableView+EmpyFalseDataView.h */,
-				044EEC8F1CC761DE00E4E07A /* UITableView+EmpyFalseDataView.m */,
 				044EEC901CC761DE00E4E07A /* UIView+FixRatio.h */,
 				044EEC911CC761DE00E4E07A /* UIView+FixRatio.m */,
+				048898E91CD35B7D00CDAF27 /* NSString+CalculateSize.h */,
+				048898EA1CD35B7D00CDAF27 /* NSString+CalculateSize.m */,
+				048898EB1CD35B7D00CDAF27 /* UIScrollView+Refresh.h */,
+				048898EC1CD35B7D00CDAF27 /* UIScrollView+Refresh.m */,
+				048898ED1CD35B7D00CDAF27 /* UIViewController+HUD.h */,
+				048898EE1CD35B7D00CDAF27 /* UIViewController+HUD.m */,
+				048898F21CD35C0600CDAF27 /* UIView+EmpyFalseDataView.h */,
+				048898F31CD35C0600CDAF27 /* UIView+EmpyFalseDataView.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -544,8 +559,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				041E6F151CC6123B00E5070B /* ViewController.m in Sources */,
-				044EEC921CC761DE00E4E07A /* UITableView+EmpyFalseDataView.m in Sources */,
 				044EEC571CC7139F00E4E07A /* NSString+ThreeDES.m in Sources */,
+				048898EF1CD35B7D00CDAF27 /* NSString+CalculateSize.m in Sources */,
 				044EEC521CC7139F00E4E07A /* NSString+GenerateUuid.m in Sources */,
 				044EEC541CC7139F00E4E07A /* UIImage+IMTransform.m in Sources */,
 				044EEC601CC724B600E4E07A /* NetworkClient.m in Sources */,
@@ -555,6 +570,7 @@
 				045619C51CC8834A00069B7A /* ZWScrollHeaderCollectionCell.m in Sources */,
 				044EEC7D1CC72F5B00E4E07A /* ZWFrostedRootViewCtrl.m in Sources */,
 				044EECA71CC76A1100E4E07A /* ZWBaseNavigationCtrl.m in Sources */,
+				048898F01CD35B7D00CDAF27 /* UIScrollView+Refresh.m in Sources */,
 				044EECA81CC76A1100E4E07A /* ZWBaseTabBarCtrl.m in Sources */,
 				044EEC991CC764F400E4E07A /* MenuTableViewCell.m in Sources */,
 				044EEC561CC7139F00E4E07A /* NSString+MD5Encrypt.m in Sources */,
@@ -565,8 +581,10 @@
 				044EECAB1CC76A1100E4E07A /* ZWScrollTableViewCtrl.m in Sources */,
 				044EEC551CC7139F00E4E07A /* GTMBase64.m in Sources */,
 				044EEC511CC7139F00E4E07A /* NSDateComponents+Timestamp.m in Sources */,
+				048898F41CD35C0600CDAF27 /* UIView+EmpyFalseDataView.m in Sources */,
 				044EEC7E1CC72F5B00E4E07A /* MenuTableHeaderView.m in Sources */,
 				044EEC931CC761DE00E4E07A /* UIView+FixRatio.m in Sources */,
+				048898F11CD35B7D00CDAF27 /* UIViewController+HUD.m in Sources */,
 				041E6F0F1CC6123B00E5070B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

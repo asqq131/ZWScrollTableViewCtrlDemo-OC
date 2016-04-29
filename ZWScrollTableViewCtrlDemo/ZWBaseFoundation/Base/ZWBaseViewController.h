@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ZWConstant.h"
+#import "NetworkClient.h"
+#import "UIViewController+HUD.h"
 
 @interface ZWBaseViewController : UIViewController
 
@@ -28,11 +30,11 @@
 - (void)reloadNetworkDataAction:(UIButton *)sender;
 
 /** 创建空数据view **/
-- (void)showEmptyDataViewAddedTo:(UIView *)view;
-/** 删除空数据view **/
-- (void)hideEmptyDataView;
-/** 更改空数据提示语和图标 **/
-- (void)setEmptyTipText:(NSString *)text andImage:(UIImage *)image;
+//- (void)showEmptyDataViewAddedTo:(UIView *)view;
+///** 删除空数据view **/
+//- (void)hideEmptyDataView;
+///** 更改空数据提示语和图标 **/
+//- (void)setEmptyTipText:(NSString *)text andImage:(UIImage *)image;
 
 /** 显示提示 **/
 - (void)showTipWithString:(NSString *)tip;

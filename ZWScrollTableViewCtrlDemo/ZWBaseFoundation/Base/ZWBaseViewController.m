@@ -12,8 +12,8 @@
 
 @interface ZWBaseViewController ()
 
-@property (nonatomic, strong) UIImageView *emptyDataVerifyImageView;
-@property (nonatomic, strong) UILabel *emptyDataTipLabel;
+//@property (nonatomic, strong) UIImageView *emptyDataVerifyImageView;
+//@property (nonatomic, strong) UILabel *emptyDataTipLabel;
 
 @end
 
@@ -102,47 +102,47 @@
 }
 
 #pragma mark 空数据view懒加载
-- (UIView *)emptyDataView {
-    if (!_emptyDataView) {
-        UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
-        view.userInteractionEnabled = NO;
-        
-        [view addSubview:self.emptyDataVerifyImageView];
-        [view addSubview:self.emptyDataTipLabel];
-        
-        _emptyDataView = view;
-    }
-    
-    return _emptyDataView;
-}
-
-#pragma mark - Private 空数据提示图标懒加载
-- (UIImageView *)emptyDataVerifyImageView {
-    if (!_emptyDataVerifyImageView) {
-        UIImage *icon = [UIImage imageNamed:kResourceSrcName(@"msg_ic_data")];
-        UIImageView *verifyImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenSize.width/2 - icon.size.width/2, kScreenSize.height / 2 - [UIView fixRatioHeightByIphone6:icon.size.height] / 2, icon.size.width, icon.size.height)];
-        verifyImageView.image = icon;
-        
-        _emptyDataVerifyImageView = verifyImageView;
-    }
-    
-    return _emptyDataVerifyImageView;
-}
-
-#pragma mark Private 空数据提示语标懒加载
-- (UILabel *)emptyDataTipLabel {
-    if (!_emptyDataTipLabel) {
-        UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.emptyDataVerifyImageView.frame), kScreenSize.width, 20)];
-        tipLabel.text = kEmptyDataTip;
-        tipLabel.textAlignment = NSTextAlignmentCenter;
-        tipLabel.textColor = kColorRGB(153, 153, 153, 1);
-        tipLabel.font = [UIFont systemFontOfSize:15];
-        
-        _emptyDataTipLabel = tipLabel;
-    }
-    
-    return _emptyDataTipLabel;
-}
+//- (UIView *)emptyDataView {
+//    if (!_emptyDataView) {
+//        UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
+//        view.userInteractionEnabled = NO;
+//        
+//        [view addSubview:self.emptyDataVerifyImageView];
+//        [view addSubview:self.emptyDataTipLabel];
+//        
+//        _emptyDataView = view;
+//    }
+//    
+//    return _emptyDataView;
+//}
+//
+//#pragma mark - Private 空数据提示图标懒加载
+//- (UIImageView *)emptyDataVerifyImageView {
+//    if (!_emptyDataVerifyImageView) {
+//        UIImage *icon = [UIImage imageNamed:kResourceSrcName(@"msg_ic_data")];
+//        UIImageView *verifyImageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenSize.width/2 - icon.size.width/2, kScreenSize.height / 2 - [UIView fixRatioHeightByIphone6:icon.size.height] / 2, icon.size.width, icon.size.height)];
+//        verifyImageView.image = icon;
+//        
+//        _emptyDataVerifyImageView = verifyImageView;
+//    }
+//    
+//    return _emptyDataVerifyImageView;
+//}
+//
+//#pragma mark Private 空数据提示语标懒加载
+//- (UILabel *)emptyDataTipLabel {
+//    if (!_emptyDataTipLabel) {
+//        UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.emptyDataVerifyImageView.frame), kScreenSize.width, 20)];
+//        tipLabel.text = kEmptyDataTip;
+//        tipLabel.textAlignment = NSTextAlignmentCenter;
+//        tipLabel.textColor = kColorRGB(153, 153, 153, 1);
+//        tipLabel.font = [UIFont systemFontOfSize:15];
+//        
+//        _emptyDataTipLabel = tipLabel;
+//    }
+//    
+//    return _emptyDataTipLabel;
+//}
 
 #pragma mark -
 
@@ -159,24 +159,24 @@
     _reloadNetworkView = nil;
 }
 
-- (void)showEmptyDataViewAddedTo:(UIView *)view {
-    [view addSubview:self.emptyDataView];
-}
-
-- (void)hideEmptyDataView {
-    [_emptyDataView removeFromSuperview];
-    _emptyDataView = nil;
-}
-
-- (void)setEmptyTipText:(NSString *)text andImage:(UIImage *)image {
-    if (_emptyDataTipLabel && text) {
-        _emptyDataTipLabel.text = text;
-    }
-    
-    if (_emptyDataVerifyImageView && image) {
-        _emptyDataVerifyImageView.image = image;
-    }
-}
+//- (void)showEmptyDataViewAddedTo:(UIView *)view {
+//    [view addSubview:self.emptyDataView];
+//}
+//
+//- (void)hideEmptyDataView {
+//    [_emptyDataView removeFromSuperview];
+//    _emptyDataView = nil;
+//}
+//
+//- (void)setEmptyTipText:(NSString *)text andImage:(UIImage *)image {
+//    if (_emptyDataTipLabel && text) {
+//        _emptyDataTipLabel.text = text;
+//    }
+//    
+//    if (_emptyDataVerifyImageView && image) {
+//        _emptyDataVerifyImageView.image = image;
+//    }
+//}
 
 - (void)showTipWithString:(NSString *)tip {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
