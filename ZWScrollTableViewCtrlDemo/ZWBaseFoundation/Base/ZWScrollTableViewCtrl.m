@@ -30,27 +30,6 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
-- (void)initGUI {
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, kScreenSize.width, 44) collectionViewLayout:flowLayout];
-    collectionView.backgroundColor = [UIColor whiteColor];
-    collectionView.delegate = self;
-    collectionView.dataSource = self;
-    collectionView.showsHorizontalScrollIndicator = NO;
-    [collectionView registerNib:[UINib nibWithNibName:@"ZWScrollHeaderCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"ZWScrollHeaderCollectionCell"];
-    [self.view addSubview:_collectionView = collectionView];
-    
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(collectionView.frame), kScreenSize.width, kScreenSize.height - CGRectGetHeight(collectionView.frame) - 44)];
-    scrollView.backgroundColor = [UIColor whiteColor];
-    scrollView.pagingEnabled = YES;
-    scrollView.showsHorizontalScrollIndicator = NO;
-    scrollView.delegate = self;
-    [self.view addSubview:_scrollView = scrollView];
-}
-
 #pragma mark 下拉刷新触发函数
 - (void)tableViewPullDownRefresh {
     NSInteger index = _scrollView.contentOffset.x / kScreenSize.width;
