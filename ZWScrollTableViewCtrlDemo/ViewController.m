@@ -25,6 +25,9 @@
     [self setupPullDownRefreshWith:self.tableViews[0]];
     [self setupPullUpRefreshWith:self.tableViews[1]];
     [[self.tableViews[0] mj_header] beginRefreshing];
+    
+    [self updateWithNavTextNormalColor:kColorRGB(51, 51, 51, 1) andSelectColor:kColorRGB(219, 34, 52, 1)];
+    self.selectedLineColor = kColorRGB(219, 34, 52, 1);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

@@ -31,7 +31,7 @@
 #define kIsIphone5 (kScreenSize.height == (568-20))
 
 #define kNetworkConnectFailTip @"网络连接失败!"
-#define kEmptyDataTip @"当前没有更多的消息哦!"
+#define kEmptyDataTip @"当前没有更多的数据!"
 
 // 图片路径
 #define kResourceSrcName(file) [@"ResourceImages.bundle" stringByAppendingPathComponent:file]

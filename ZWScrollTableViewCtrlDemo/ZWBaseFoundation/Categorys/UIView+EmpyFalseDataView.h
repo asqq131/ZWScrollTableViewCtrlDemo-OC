@@ -10,14 +10,14 @@
 
 @interface UIView (EmpyFalseDataView)
 
-/** 设置view空数据view关联 **/
-- (void)setupEmptyDataView;
-/** 设置view网络请求失败view关联 **/
-- (void)setupNetworkReloadView;
+/** 设置空数据view，图标和提示传nil或空则使用默认值 **/
+- (void)setupEmptyDataViewWith:(UIImage *)image tipText:(NSString *)tip;
+/** 设置网络请求失败view，图标和提示传nil或空则使用默认值 **/
+- (void)setupNetworkReloadViewWith:(UIImage *)image tipText:(NSString *)tip;
 
-/** 获取view空数据view关联 **/
+/** 获取空数据view关联 **/
 - (UIView *)getEmptyDataViewKey;
-/** 获取view网络请求失败view关联 **/
+/** 获取网络请求失败view关联 **/
 - (UIView *)getNetworkReloadViewKey;
 /** 必须先初始化NetworkReloadView **/
 - (UIButton *)getNetworkReloadBtnKey;

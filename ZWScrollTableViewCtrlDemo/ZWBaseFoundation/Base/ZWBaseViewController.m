@@ -8,7 +8,7 @@
 
 #import "ZWBaseViewController.h"
 #import "UIView+FixRatio.h"
-#import <MBProgressHUD/MBProgressHUD.h>
+//#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface ZWBaseViewController ()
 
@@ -178,12 +178,12 @@
 //    }
 //}
 
-- (void)showTipWithString:(NSString *)tip {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeText;
-    hud.labelText = tip;
-    hud.labelFont = [UIFont systemFontOfSize:14];
-    [hud hide:YES afterDelay:3.0];
-}
+//- (void)showTipWithString:(NSString *)tip {
+//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    hud.mode = MBProgressHUDModeText;
+//    hud.labelText = tip;
+//    hud.labelFont = [UIFont systemFontOfSize:14];
+//    [hud hide:YES afterDelay:3.0];
+//}
 
 @end

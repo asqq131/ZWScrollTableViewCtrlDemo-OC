@@ -14,7 +14,7 @@
 #import "MBProgressHUD.h"
 #import <objc/runtime.h>
 
-#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+//#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 
 static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
 
@@ -39,29 +39,27 @@ static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
 - (void)showHint:(NSString *)hint
 {
     //显示提示信息
-    UIView *view = [[UIApplication sharedApplication].delegate window];
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+//    UIView *view = [[UIApplication sharedApplication].delegate window];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.userInteractionEnabled = NO;
     // Configure for text only and offset down
     hud.mode = MBProgressHUDModeText;
     hud.labelText = hint;
     hud.margin = 10.f;
-    hud.yOffset = IS_IPHONE_5?200.f:150.f;
     hud.removeFromSuperViewOnHide = YES;
     [hud hide:YES afterDelay:2];
 }
 
 - (void)showHint:(NSString *)hint yOffset:(float)yOffset {
     //显示提示信息
-    UIView *view = [[UIApplication sharedApplication].delegate window];
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+//    UIView *view = [[UIApplication sharedApplication].delegate window];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.userInteractionEnabled = NO;
     // Configure for text only and offset down
     hud.mode = MBProgressHUDModeText;
     hud.labelText = hint;
     hud.margin = 10.f;
-    hud.yOffset = IS_IPHONE_5?200.f:150.f;
-    hud.yOffset += yOffset;
+    hud.yOffset = yOffset;
     hud.removeFromSuperViewOnHide = YES;
     [hud hide:YES afterDelay:2];
 }

@@ -37,6 +37,6 @@
 //- (void)setEmptyTipText:(NSString *)text andImage:(UIImage *)image;
 
 /** 显示提示 **/
-- (void)showTipWithString:(NSString *)tip;
+//- (void)showTipWithString:(NSString *)tip;
 
 @end

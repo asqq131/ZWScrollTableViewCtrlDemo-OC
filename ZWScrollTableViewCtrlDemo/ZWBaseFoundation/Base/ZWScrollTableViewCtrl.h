@@ -6,8 +6,7 @@
 //  Copyright © 2016年 mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <MJRefresh/MJRefresh.h>
+#import "UIScrollView+Refresh.h"
 #import "ZWBaseViewController.h"
 #import "UIView+EmpyFalseDataView.h"
 
@@ -29,9 +28,19 @@
 /** 导航按钮标题集合 **/
 @property (nonatomic, strong) NSArray *navTitles;
 
+/** 导航按钮选中线颜色 **/
+@property (nonatomic) UIColor *selectedLineColor;
+/** 导航按钮选中颜色 **/
+@property (nonatomic) UIColor *selectedNavTextColor;
+/** 导航按钮选中颜色 **/
+@property (nonatomic) UIColor *normalNavTextColor;
+
 /** 根据count初始化所需tableView和导航按钮 **/
 - (void)setUpTableViewAtCount:(NSInteger)count;
 - (void)setUpTableViewAtCount:(NSInteger)count navTitles:(NSArray *)titles;
+
+/** 更换导航按钮默认和选中颜色 **/
+- (void)updateWithNavTextNormalColor:(UIColor *)normalColor andSelectColor:(UIColor *)selectColor;
 
 /** 导航按钮触发函数 **/
 //- (void)headerBtn:(UIButton *)sender didSelectAtIndex:(NSInteger)index;

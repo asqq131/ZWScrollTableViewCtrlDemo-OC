@@ -88,6 +88,13 @@
     [_collectionView setContentOffset:CGPointMake(centerOffset, 0) animated:YES];
 }
 
+#pragma mark 更换导航按钮默认和选中颜色
+- (void)updateWithNavTextNormalColor:(UIColor *)normalColor andSelectColor:(UIColor *)selectColor {
+    _normalNavTextColor = normalColor;
+    _selectedNavTextColor = selectColor;
+    [_collectionView reloadData];
+}
+
 #pragma mark - ---External Methods---
 
 #pragma mark 按传入的count个数初始化tableView以及导航按钮
@@ -108,10 +115,10 @@
         [tableViews addObject:tableView]; // 存入临时tableView集合
         
         // 创建空数据view
-        [tableView setupEmptyDataView];
+        [tableView setupEmptyDataViewWith:nil tipText:nil];
         
         // 创建网络访问错误view
-        [tableView setupNetworkReloadView];
+        [tableView setupNetworkReloadViewWith:nil tipText:nil];
         [[tableView getNetworkReloadBtnKey] addTarget:self action:@selector(networkReloadDataAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     _headerNavBtns = btns; // 赋值给按钮集合对象，供外部访问
@@ -139,15 +146,12 @@
 
 #pragma mark 根据tableView设置下拉刷新
 - (void)setupPullDownRefreshWith:(UITableView *)tableView {
-    MJRefreshNormalHeader *refreshHeader = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(tableViewPullDownRefresh)];
-    tableView.mj_header = refreshHeader;
+    [tableView setupPullDownRefreshWithTarget:self refreshingAction:@selector(tableViewPullDownRefresh)];
 }
 
 #pragma mark 根据tableView设置上拉刷新
 - (void)setupPullUpRefreshWith:(UITableView *)tableView {
-    MJRefreshAutoNormalFooter *refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(tableViewPullUpRefresh)];
-    refreshFooter.automaticallyHidden = YES;
-    tableView.mj_footer = refreshFooter;
+    [tableView setupPullUpRefreshWithhTarget:self refreshingAction:@selector(tableViewPullUpRefresh)];
 }
 
 #pragma mark 下拉刷新对外访问函数，提供tableView
@@ -165,6 +169,7 @@
     NSLog(@"ZWScrollTableViewCtrlViewController tableNetworkReloadDataAction");
 }
 
+#pragma mark 导航按钮触发函数
 - (void)headerBtnDidSelectAtIndex:(NSIndexPath *)indexPath {
 //    NSLog(@"ZWScrollTableViewCtrlViewController didSelectAtIndex at %@", indexPath);
 }
@@ -217,6 +222,8 @@
     
     cell.itemBtn.selected = _currentSelectItemIndex == indexPath.row;
     cell.separatorLine.hidden = _tableViewCount - 1 == indexPath.row;
+    [cell.itemBtn setTitleColor:_selectedNavTextColor forState:UIControlStateSelected];
+    [cell.itemBtn setTitleColor:_normalNavTextColor forState:UIControlStateNormal];
     
     if (_navTitles && _navTitles.count == _tableViewCount) {
         [cell.itemBtn setTitle:_navTitles[indexPath.row] forState:UIControlStateNormal];
@@ -255,10 +262,29 @@
     _navTitles = navTitles;
     
     if (navTitles.count != _tableViewCount) {
-        [self showTipWithString:@"导航按钮数目与列表数不一致"];
+        [self showHint:@"导航按钮数目与列表数不一致"];
+        
     } else {
         [_collectionView reloadData];
     }
+}
+
+- (void)setSelectedLineColor:(UIColor *)selectedLineColor {
+    _selectedLineColor = selectedLineColor;
+    
+    _selectedLine.backgroundColor = selectedLineColor;
+}
+
+- (void)setSelectedNavTextColor:(UIColor *)selectedNavTextColor {
+    _selectedNavTextColor = selectedNavTextColor;
+    
+    [_collectionView reloadData];
+}
+
+- (void)setNormalNavTextColor:(UIColor *)normalNavTextColor {
+    _normalNavTextColor = normalNavTextColor;
+    
+    [_collectionView reloadData];
 }
 
 @end
