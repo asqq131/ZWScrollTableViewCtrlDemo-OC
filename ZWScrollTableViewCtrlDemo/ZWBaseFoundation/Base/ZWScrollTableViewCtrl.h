@@ -13,21 +13,21 @@
 @interface ZWScrollTableViewCtrl : ZWBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 /** 底部scrollview **/
-@property (nonatomic, weak) UIScrollView *scrollView;
+@property (nonatomic) UIScrollView *scrollView;
 /** 顶部导航按钮view **/
-@property (nonatomic, weak) UIView *headerView;
+@property (nonatomic) UIView *headerView;
 /** 导航按钮 **/
 @property (nonatomic, weak) UICollectionView *collectionView;
 
 /** 存放tableView集合 **/
 @property (nonatomic, strong, readonly) NSArray *tableViews;
-/** 存放导航按钮集合 **/
-@property (nonatomic, strong, readonly) NSArray *headerNavBtns;
 /** tableView显示个数 **/
 @property (nonatomic, assign, readonly) NSInteger tableViewCount;
 /** 导航按钮标题集合 **/
 @property (nonatomic, strong) NSArray *navTitles;
 
+/** 自定义顶部View **/
+@property (nonatomic, weak) UIView *customHeaderView;
 /** 导航按钮选中线颜色 **/
 @property (nonatomic) UIColor *selectedLineColor;
 /** 导航按钮选中颜色 **/
@@ -38,6 +38,7 @@
 /** 根据count初始化所需tableView和导航按钮 **/
 - (void)setUpTableViewAtCount:(NSInteger)count;
 - (void)setUpTableViewAtCount:(NSInteger)count navTitles:(NSArray *)titles;
+- (void)setUpTableViewAtCount:(NSInteger)count navTitles:(NSArray *)titles customHeaderView:(UIView *)customHeaderView;
 
 /** 更换导航按钮默认和选中颜色 **/
 - (void)updateWithNavTextNormalColor:(UIColor *)normalColor andSelectColor:(UIColor *)selectColor;

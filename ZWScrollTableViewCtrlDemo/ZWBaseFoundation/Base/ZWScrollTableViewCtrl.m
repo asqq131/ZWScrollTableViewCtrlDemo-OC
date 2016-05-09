@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self initGUI];
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 - (void)initGUI {
@@ -99,11 +99,11 @@
 
 #pragma mark 按传入的count个数初始化tableView以及导航按钮
 - (void)setUpTableViewAtCount:(NSInteger)count {
-    [self initGUI];
+    [self.view addSubview:self.collectionView];
+    [self.view addSubview:self.scrollView];
     
     _tableViewCount = count;
     
-    NSMutableArray *btns = [NSMutableArray array];
     NSMutableArray *tableViews = [NSMutableArray array];
     for (int i = 0; i < count; i++) {
         // init tableView
@@ -121,7 +121,6 @@
         [tableView setupNetworkReloadViewWith:nil tipText:nil];
         [[tableView getNetworkReloadBtnKey] addTarget:self action:@selector(networkReloadDataAction:) forControlEvents:UIControlEventTouchUpInside];
     }
-    _headerNavBtns = btns; // 赋值给按钮集合对象，供外部访问
     _tableViews = tableViews; // 赋值给tableView集合对象，供外部访问
     
     // 按钮底部选中线
@@ -142,6 +141,13 @@
     [self setUpTableViewAtCount:count];
     
     self.navTitles = titles;
+}
+
+- (void)setUpTableViewAtCount:(NSInteger)count navTitles:(NSArray *)titles customHeaderView:(UIView *)customHeaderView {
+    self.customHeaderView = customHeaderView;
+    [self.view addSubview:self.customHeaderView];
+    
+    [self setUpTableViewAtCount:count navTitles:titles];
 }
 
 #pragma mark 根据tableView设置下拉刷新
@@ -257,6 +263,35 @@
 }
 
 #pragma mark - ---setting getting---
+
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+        flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.customHeaderView.frame) + 64, kScreenSize.width, 44) collectionViewLayout:flowLayout];
+        collectionView.backgroundColor = [UIColor whiteColor];
+        collectionView.delegate = self;
+        collectionView.dataSource = self;
+        collectionView.showsHorizontalScrollIndicator = NO;
+        [collectionView registerNib:[UINib nibWithNibName:@"ZWScrollHeaderCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"ZWScrollHeaderCollectionCell"];
+        _collectionView = collectionView;
+    }
+    
+    return _collectionView;
+}
+
+- (UIScrollView *)scrollView {
+    if (!_scrollView) {
+        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.collectionView.frame), kScreenSize.width, kScreenSize.height + 20 - CGRectGetMaxY(self.collectionView.frame))];
+        scrollView.backgroundColor = [UIColor whiteColor];
+        scrollView.pagingEnabled = YES;
+        scrollView.showsHorizontalScrollIndicator = NO;
+        scrollView.delegate = self;
+        _scrollView = scrollView;
+    }
+    
+    return _scrollView;
+}
 
 - (void)setNavTitles:(NSArray *)navTitles {
     _navTitles = navTitles;
