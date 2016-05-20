@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZWScrollTableViewCtrl.h"
+#import "WScrollTableViewCtrl.h"
 
-@interface ViewController : ZWScrollTableViewCtrl
+@interface ViewController : WScrollTableViewCtrl
 
 
 @end
