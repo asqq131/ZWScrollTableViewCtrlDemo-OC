@@ -19,6 +19,9 @@
 		04B331AF1CF6F90C00127AC6 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331A91CF6F90C00127AC6 /* WebViewJavascriptBridge.m */; };
 		04B331B01CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331AB1CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m */; };
 		04B331B11CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331AD1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m */; };
+		04B331B91CF700FF00127AC6 /* AuthcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331B41CF700FF00127AC6 /* AuthcodeView.m */; };
+		04B331BE1CF7016D00127AC6 /* NSString+MoneyFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331BD1CF7016D00127AC6 /* NSString+MoneyFormat.m */; };
+		04B331C11CF702E300127AC6 /* NSString+InvalidNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331C01CF702E300127AC6 /* NSString+InvalidNull.m */; };
 		04C231D91CEEF07400D27653 /* WScrollHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2319E1CEEF07400D27653 /* WScrollHeaderCollectionCell.m */; };
 		04C231DA1CEEF07400D27653 /* WScrollHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C2319F1CEEF07400D27653 /* WScrollHeaderCollectionCell.xib */; };
 		04C231DB1CEEF07400D27653 /* WBaseNavigationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231A11CEEF07400D27653 /* WBaseNavigationCtrl.m */; };
@@ -92,6 +95,12 @@
 		04B331AB1CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
 		04B331AC1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		04B331AD1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		04B331B31CF700FF00127AC6 /* AuthcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthcodeView.h; sourceTree = "<group>"; };
+		04B331B41CF700FF00127AC6 /* AuthcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthcodeView.m; sourceTree = "<group>"; };
+		04B331BC1CF7016D00127AC6 /* NSString+MoneyFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MoneyFormat.h"; sourceTree = "<group>"; };
+		04B331BD1CF7016D00127AC6 /* NSString+MoneyFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MoneyFormat.m"; sourceTree = "<group>"; };
+		04B331BF1CF702E300127AC6 /* NSString+InvalidNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InvalidNull.h"; sourceTree = "<group>"; };
+		04B331C01CF702E300127AC6 /* NSString+InvalidNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InvalidNull.m"; sourceTree = "<group>"; };
 		04C231991CEEE9E300D27653 /* ZWScrollTableViewCtrlDemo-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZWScrollTableViewCtrlDemo-prefix.pch"; sourceTree = "<group>"; };
 		04C2319D1CEEF07400D27653 /* WScrollHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WScrollHeaderCollectionCell.h; sourceTree = "<group>"; };
 		04C2319E1CEEF07400D27653 /* WScrollHeaderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WScrollHeaderCollectionCell.m; sourceTree = "<group>"; };
@@ -259,10 +268,20 @@
 			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
+		04B331B21CF700FF00127AC6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				04B331B31CF700FF00127AC6 /* AuthcodeView.h */,
+				04B331B41CF700FF00127AC6 /* AuthcodeView.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		04C2319A1CEEF07400D27653 /* WBaseFoundation */ = {
 			isa = PBXGroup;
 			children = (
 				04C231D81CEEF07400D27653 /* WBaseFoundation.h */,
+				04B331B21CF700FF00127AC6 /* Common */,
 				04B331A61CF6F90C00127AC6 /* WebViewJavascriptBridge */,
 				04C2319B1CEEF07400D27653 /* Base */,
 				04C231AA1CEEF07400D27653 /* Categorys */,
@@ -321,6 +340,10 @@
 				04C231B81CEEF07400D27653 /* UIView+FixRatio.m */,
 				04C231B91CEEF07400D27653 /* UIViewController+HUD.h */,
 				04C231BA1CEEF07400D27653 /* UIViewController+HUD.m */,
+				04B331BC1CF7016D00127AC6 /* NSString+MoneyFormat.h */,
+				04B331BD1CF7016D00127AC6 /* NSString+MoneyFormat.m */,
+				04B331BF1CF702E300127AC6 /* NSString+InvalidNull.h */,
+				04B331C01CF702E300127AC6 /* NSString+InvalidNull.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -596,7 +619,9 @@
 				04B331B11CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m in Sources */,
 				04C231DB1CEEF07400D27653 /* WBaseNavigationCtrl.m in Sources */,
 				04C231E41CEEF07400D27653 /* UIScrollView+Refresh.m in Sources */,
+				04B331C11CF702E300127AC6 /* NSString+InvalidNull.m in Sources */,
 				04C231FB1CEEF1F100D27653 /* AFHTTPRequest.m in Sources */,
+				04B331BE1CF7016D00127AC6 /* NSString+MoneyFormat.m in Sources */,
 				04C231E81CEEF07400D27653 /* GTMBase64.m in Sources */,
 				04C231E61CEEF07400D27653 /* UIView+FixRatio.m in Sources */,
 				04C231F11CEEF07400D27653 /* WFrostedRootViewCtrl.m in Sources */,
@@ -611,6 +636,7 @@
 				04C231EC1CEEF07400D27653 /* MenuTableViewCell.m in Sources */,
 				041E6F0F1CC6123B00E5070B /* main.m in Sources */,
 				04C231D91CEEF07400D27653 /* WScrollHeaderCollectionCell.m in Sources */,
+				04B331B91CF700FF00127AC6 /* AuthcodeView.m in Sources */,
 				04C231E31CEEF07400D27653 /* UIImage+IMTransform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
