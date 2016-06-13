@@ -26,6 +26,19 @@
 #define DebugLog(...)
 #endif
 
+/**
+ Synthsize a weak or strong reference.
+ 
+ Example:
+ @weakify(self)
+ [self doSomething^{
+ @strongify(self)
+ if (!self) return;
+ ...
+ }];
+ 
+ */
+
 #ifndef weakify
 #if DEBUG
 #if __has_feature(objc_arc)
@@ -41,7 +54,6 @@
 #endif
 #endif
 #endif
-
 
 #ifndef strongify
 #if DEBUG
@@ -84,6 +96,7 @@
 
 #define kNetworkConnectFailTip @"网络连接失败!"
 #define kEmptyDataTip @"当前没有更多的数据!"
+#define kServerRequestFailTip  @"服务器无响应"
 
 // 图片路径
 #define kResourceSrcName(file) [@"ResourceImages.bundle" stringByAppendingPathComponent:file]
