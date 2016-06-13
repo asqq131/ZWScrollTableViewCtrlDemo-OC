@@ -29,11 +29,9 @@ static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
 }
 
 - (void)showHudInView:(UIView *)view hint:(NSString *)hint{
-    MBProgressHUD *HUD = [[MBProgressHUD alloc] initWithView:view];
-    HUD.labelText = hint;
-    [view addSubview:HUD];
-    [HUD show:YES];
-    [self setHUD:HUD];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = hint;
+    [self setHUD:hud];
 }
 
 - (void)showHint:(NSString *)hint

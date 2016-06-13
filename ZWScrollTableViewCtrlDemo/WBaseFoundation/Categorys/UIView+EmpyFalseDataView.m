@@ -35,7 +35,7 @@ static char networkReloadBtnKey;
         tipText = kEmptyDataTip;
     }
     
-    CGSize iconSize = CGSizeMake([UIView fixRatioWidthByIphone6:icon.size.width], [UIView fixRatioHeightByIphone6:icon.size.height]);
+    CGSize iconSize = CGSizeMake(kFixRatioWidthByIphone6(icon.size.width), kFixRatioHeightByIphone6(icon.size.height));
     UIImageView *verifyImageView = [[UIImageView alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.frame) - iconSize.width) / 2, (CGRectGetHeight(self.frame) - iconSize.height) / 2 - 44 + yOffset, icon.size.width, icon.size.height)];
     verifyImageView.image = icon;
     [emptyDataView addSubview:verifyImageView];
@@ -70,7 +70,7 @@ static char networkReloadBtnKey;
         tipText = kNetworkConnectFailTip;
     }
     
-    CGSize iconSize = CGSizeMake([UIView fixRatioWidthByIphone6:icon.size.width], [UIView fixRatioHeightByIphone6:icon.size.height]);
+    CGSize iconSize = CGSizeMake(kFixRatioWidthByIphone6(icon.size.width), kFixRatioHeightByIphone6(icon.size.height));
     UIImageView *verifyImageView = [[UIImageView alloc] initWithFrame:CGRectMake((CGRectGetWidth(self.frame) - iconSize.width) / 2, (CGRectGetHeight(self.frame) - iconSize.height) / 2 - 64 + yOffset, icon.size.width, icon.size.height)];
     verifyImageView.image = icon;
     verifyImageView.userInteractionEnabled = NO;
@@ -83,7 +83,7 @@ static char networkReloadBtnKey;
     tipLabel.font = [UIFont systemFontOfSize:15];
     [view addSubview:tipLabel];
     
-    CGSize btnSize = CGSizeMake([UIView fixRatioHeightByIphone6:112], [UIView fixRatioHeightByIphone6:32]);
+    CGSize btnSize = CGSizeMake(kFixRatioHeightByIphone6(112), kFixRatioHeightByIphone6(32));
     UIButton *reloadButton = [UIButton buttonWithType:UIButtonTypeCustom];
     reloadButton.frame = CGRectMake((CGRectGetWidth(self.frame) - 112) / 2, CGRectGetMaxY(tipLabel.frame) + 13, btnSize.width, btnSize.height);
     [reloadButton setImage:[UIImage imageNamed:kResourceSrcName(@"msg_ic_loading")] forState:UIControlStateNormal];

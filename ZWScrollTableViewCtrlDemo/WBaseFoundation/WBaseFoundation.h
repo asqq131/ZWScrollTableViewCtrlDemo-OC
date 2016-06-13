@@ -13,6 +13,9 @@
 #import "WBaseViewController.h"
 #import "WScrollTableViewCtrl.h"
 
+// constant 通用
+#import "WConstants.h"
+
 // network 网络请求类
 #import "AFHTTPRequest.h"
 #import "AFHTTPRequestHelper.h"

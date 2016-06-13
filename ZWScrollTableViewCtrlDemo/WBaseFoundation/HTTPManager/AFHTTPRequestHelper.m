@@ -7,6 +7,7 @@
 //
 
 #import "AFHTTPRequestHelper.h"
+#import "AFHTTPRequest.h"
 
 @implementation AFHTTPRequestHelper
 
