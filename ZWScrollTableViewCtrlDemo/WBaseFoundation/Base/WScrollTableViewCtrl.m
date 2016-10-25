@@ -42,6 +42,9 @@
         centerOffset = itemOffset + itemWidth - kScreenSize.width;
     }
     
+//    CGFloat centerOffsetX = fabs(self.view.center.x - cellFrameInSuperview.origin.x - (kScreenSize.width / _collectionItemCount / 2));
+//    NSLog(@"%f---%f", centerOffset, centerOffsetX);
+    
     [_collectionView setContentOffset:CGPointMake(centerOffset, 0) animated:YES];
 }
 
@@ -72,13 +75,13 @@
         [tableViews addObject:tableView]; // 存入临时tableView集合
         
         // 创建空数据view
-        [tableView setupEmptyDataViewWith:nil tipText:nil yOffset:0];
-        [tableView getEmptyDataViewKey].hidden = YES;
+        [tableView setupEmptyDataViewWithImageString:nil tipText:nil btnText:@"" margin:UIEdgeInsetsZero yImageOffset:64];
+        [tableView setEmptyViewHidden:YES];
         
         // 创建网络访问错误view
-        [tableView setupNetworkReloadViewWith:nil tipText:nil yOffset:0];
-        [[tableView getNetworkReloadBtnKey] addTarget:self action:@selector(networkReloadDataAction:) forControlEvents:UIControlEventTouchUpInside];
-        [tableView getNetworkReloadViewKey].hidden = YES;
+        [tableView setupNetworkReloadViewWithImageString:nil tipText:nil btnText:@"" margin:UIEdgeInsetsZero yImageOffset:94];
+        [tableView networkReloadButtonAddTarget:self action:@selector(networkReloadDataAction:) forControlEvents:UIControlEventTouchUpInside];
+        [tableView setNetworkReloadViewHidden:YES];
     }
     _tableViews = tableViews; // 赋值给tableView集合对象，供外部访问
     

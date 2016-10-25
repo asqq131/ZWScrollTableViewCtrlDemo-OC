@@ -18,10 +18,12 @@
     [super viewDidLoad];
     
 //    [self setUpTableViewAtCount:6];
-    [self setUpTableViewAtCount:6 navTitles:@[@"按钮1", @"按钮2", @"按钮3", @"按钮4", @"按钮5", @"按钮6", @"按钮7"]];
+    [self setUpTableViewAtCount:6 navTitles:@[@"按钮1", @"按钮2", @"按钮3", @"按钮4", @"按钮5", @"按钮6"]];
     
-//    [self.tableViews[0] getNetworkReloadViewKey].hidden = NO;
-//    [self.tableViews[1] getEmptyDataViewKey].hidden = NO;
+//    [self.tableViews[0] setNetworkReloadViewHidden:NO];
+//    [self.tableViews[1] setEmptyViewHidden:NO];
+//    [self.tableViews[0] showEmptyViewWithTip:@"hello word" btnString:@"取消"];
+    
     [self setupPullDownRefreshWith:self.tableViews[0]];
     [self setupPullUpRefreshWith:self.tableViews[1]];
     [[self.tableViews[0] mj_header] beginRefreshing];

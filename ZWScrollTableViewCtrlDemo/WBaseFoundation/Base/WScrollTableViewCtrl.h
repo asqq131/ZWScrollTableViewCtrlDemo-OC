@@ -10,7 +10,7 @@
 #import "WBaseViewController.h"
 #import "UIView+EmpyFalseDataView.h"
 
-@interface WScrollTableViewCtrl : WBaseViewController <UITableViewDataSource, UITableViewDelegate>
+@interface WScrollTableViewCtrl : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 /** 底部scrollview **/
 @property (nonatomic) UIScrollView *scrollView;
