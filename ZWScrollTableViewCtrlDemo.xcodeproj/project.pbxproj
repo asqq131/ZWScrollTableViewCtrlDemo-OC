@@ -20,6 +20,7 @@
 		0442EFB61DBEF10400A8960B /* NSString+GenerateUuid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFB01DBEF10400A8960B /* NSString+GenerateUuid.m */; };
 		0442EFB71DBEF10400A8960B /* NSString+InvalidNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFB21DBEF10400A8960B /* NSString+InvalidNull.m */; };
 		0442EFB81DBEF10400A8960B /* NSString+MoneyFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFB41DBEF10400A8960B /* NSString+MoneyFormat.m */; };
+		0442EFBC1DBF653C00A8960B /* PLLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFBB1DBF653C00A8960B /* PLLAlertView.m */; };
 		04B331AE1CF6F90C00127AC6 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B331A81CF6F90C00127AC6 /* WebViewJavascriptBridge.js.txt */; };
 		04B331AF1CF6F90C00127AC6 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331A91CF6F90C00127AC6 /* WebViewJavascriptBridge.m */; };
 		04B331B01CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331AB1CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m */; };
@@ -36,8 +37,7 @@
 		04C231E01CEEF07400D27653 /* NSDateComponents+Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231AC1CEEF07400D27653 /* NSDateComponents+Timestamp.m */; };
 		04C231E31CEEF07400D27653 /* UIImage+IMTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231B21CEEF07400D27653 /* UIImage+IMTransform.m */; };
 		04C231E41CEEF07400D27653 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231B41CEEF07400D27653 /* UIScrollView+Refresh.m */; };
-		04C231E51CEEF07400D27653 /* UIView+EmpyFalseDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231B61CEEF07400D27653 /* UIView+EmpyFalseDataView.m */; };
-		04C231E61CEEF07400D27653 /* UIView+FixRatio.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231B81CEEF07400D27653 /* UIView+FixRatio.m */; };
+		04C231E51CEEF07400D27653 /* UIView+EmptyFailureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231B61CEEF07400D27653 /* UIView+EmptyFailureView.m */; };
 		04C231E71CEEF07400D27653 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231BA1CEEF07400D27653 /* UIViewController+HUD.m */; };
 		04C231E81CEEF07400D27653 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231BD1CEEF07400D27653 /* GTMBase64.m */; };
 		04C231E91CEEF07400D27653 /* NSString+MD5Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231C01CEEF07400D27653 /* NSString+MD5Encrypt.m */; };
@@ -100,6 +100,8 @@
 		0442EFB21DBEF10400A8960B /* NSString+InvalidNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InvalidNull.m"; sourceTree = "<group>"; };
 		0442EFB31DBEF10400A8960B /* NSString+MoneyFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MoneyFormat.h"; sourceTree = "<group>"; };
 		0442EFB41DBEF10400A8960B /* NSString+MoneyFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MoneyFormat.m"; sourceTree = "<group>"; };
+		0442EFBA1DBF653C00A8960B /* PLLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLAlertView.h; sourceTree = "<group>"; };
+		0442EFBB1DBF653C00A8960B /* PLLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLLAlertView.m; sourceTree = "<group>"; };
 		04B331A71CF6F90C00127AC6 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		04B331A81CF6F90C00127AC6 /* WebViewJavascriptBridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebViewJavascriptBridge.js.txt; sourceTree = "<group>"; };
 		04B331A91CF6F90C00127AC6 /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
@@ -132,10 +134,8 @@
 		04C231B21CEEF07400D27653 /* UIImage+IMTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IMTransform.m"; sourceTree = "<group>"; };
 		04C231B31CEEF07400D27653 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
 		04C231B41CEEF07400D27653 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
-		04C231B51CEEF07400D27653 /* UIView+EmpyFalseDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmpyFalseDataView.h"; sourceTree = "<group>"; };
-		04C231B61CEEF07400D27653 /* UIView+EmpyFalseDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmpyFalseDataView.m"; sourceTree = "<group>"; };
-		04C231B71CEEF07400D27653 /* UIView+FixRatio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FixRatio.h"; sourceTree = "<group>"; };
-		04C231B81CEEF07400D27653 /* UIView+FixRatio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FixRatio.m"; sourceTree = "<group>"; };
+		04C231B51CEEF07400D27653 /* UIView+EmptyFailureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyFailureView.h"; sourceTree = "<group>"; };
+		04C231B61CEEF07400D27653 /* UIView+EmptyFailureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyFailureView.m"; sourceTree = "<group>"; };
 		04C231B91CEEF07400D27653 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
 		04C231BA1CEEF07400D27653 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
 		04C231BC1CEEF07400D27653 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -285,6 +285,15 @@
 			path = "NSString+Category";
 			sourceTree = "<group>";
 		};
+		0442EFB91DBF653C00A8960B /* PLLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				0442EFBA1DBF653C00A8960B /* PLLAlertView.h */,
+				0442EFBB1DBF653C00A8960B /* PLLAlertView.m */,
+			);
+			path = PLLAlertView;
+			sourceTree = "<group>";
+		};
 		04B331A61CF6F90C00127AC6 /* WebViewJavascriptBridge */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +311,7 @@
 		04BFFDFB1CFD622300777909 /* Venders */ = {
 			isa = PBXGroup;
 			children = (
+				0442EFB91DBF653C00A8960B /* PLLAlertView */,
 				04BFFDFC1CFD622300777909 /* AuthcodeView.h */,
 				04BFFDFD1CFD622300777909 /* AuthcodeView.m */,
 				04BFFDFE1CFD622300777909 /* IPAddresses.h */,
@@ -366,10 +376,8 @@
 				04C231B21CEEF07400D27653 /* UIImage+IMTransform.m */,
 				04C231B31CEEF07400D27653 /* UIScrollView+Refresh.h */,
 				04C231B41CEEF07400D27653 /* UIScrollView+Refresh.m */,
-				04C231B51CEEF07400D27653 /* UIView+EmpyFalseDataView.h */,
-				04C231B61CEEF07400D27653 /* UIView+EmpyFalseDataView.m */,
-				04C231B71CEEF07400D27653 /* UIView+FixRatio.h */,
-				04C231B81CEEF07400D27653 /* UIView+FixRatio.m */,
+				04C231B51CEEF07400D27653 /* UIView+EmptyFailureView.h */,
+				04C231B61CEEF07400D27653 /* UIView+EmptyFailureView.m */,
 				04C231B91CEEF07400D27653 /* UIViewController+HUD.h */,
 				04C231BA1CEEF07400D27653 /* UIViewController+HUD.m */,
 			);
@@ -650,13 +658,13 @@
 				04C231DB1CEEF07400D27653 /* WBaseNavigationCtrl.m in Sources */,
 				04C231E41CEEF07400D27653 /* UIScrollView+Refresh.m in Sources */,
 				04C231FB1CEEF1F100D27653 /* AFHTTPRequest.m in Sources */,
+				0442EFBC1DBF653C00A8960B /* PLLAlertView.m in Sources */,
 				04C231E81CEEF07400D27653 /* GTMBase64.m in Sources */,
-				04C231E61CEEF07400D27653 /* UIView+FixRatio.m in Sources */,
 				04C231F11CEEF07400D27653 /* WFrostedRootViewCtrl.m in Sources */,
 				04C231EF1CEEF07400D27653 /* MenuTableHeaderView.m in Sources */,
 				041E6F151CC6123B00E5070B /* ViewController.m in Sources */,
 				041E6F121CC6123B00E5070B /* AppDelegate.m in Sources */,
-				04C231E51CEEF07400D27653 /* UIView+EmpyFalseDataView.m in Sources */,
+				04C231E51CEEF07400D27653 /* UIView+EmptyFailureView.m in Sources */,
 				0442EFB61DBEF10400A8960B /* NSString+GenerateUuid.m in Sources */,
 				04C231DC1CEEF07400D27653 /* WBaseTabBarCtrl.m in Sources */,
 				04BFFE031CFD622300777909 /* IPAddresses.m in Sources */,

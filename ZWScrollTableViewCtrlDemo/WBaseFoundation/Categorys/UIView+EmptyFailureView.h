@@ -21,7 +21,7 @@
 - (void)showNetworkReloadViewWithTip:(NSString *)tip btnString:(NSString *)btnString;
 - (void)emptyButtonAddTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
 
-/** 设置空数据view，图标和提示传nil或空则使用默认值 **/
+/** 设置空数据view，图标和提示传nil或空则使用默认值，按钮text传nil或空则隐藏 **/
 - (void)setupEmptyDataViewWithImageString:(NSString *)imageString
                                   tipText:(NSString *)tip
                                   btnText:(NSString *)btnText

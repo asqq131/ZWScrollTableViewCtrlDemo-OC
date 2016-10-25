@@ -26,6 +26,8 @@
     [super viewDidLoad];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.selectedLineColor = kColorRGB(54, 201, 251, 1);
 }
 
 // FIXME: 可以直接获取到collectionView中每个cell相对父控件的位置
@@ -59,19 +61,27 @@
 
 #pragma mark 按传入的count个数初始化tableView以及导航按钮
 - (void)setUpTableViewAtCount:(NSInteger)count {
-    [self.view addSubview:self.collectionView];
-    [self.view addSubview:self.scrollView];
+//    [self.view addSubview:self.collectionView];
+//    [self.view addSubview:self.scrollView];
+    
+    for (UIView *view in self.scrollView.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    for (UIView *view in self.collectionView.subviews) {
+        [view removeFromSuperview];
+    }
     
     _tableViewCount = count;
     
     NSMutableArray *tableViews = [NSMutableArray array];
     for (int i = 0; i < count; i++) {
         // init tableView
-        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(kScreenSize.width * i, 0, kScreenSize.width, CGRectGetHeight(_scrollView.frame))];
+        UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(kScreenSize.width * i, 0, kScreenSize.width, CGRectGetHeight(self.scrollView.frame))];
         tableView.tableFooterView = [[UIView alloc] init];
         tableView.delegate = self;
         tableView.dataSource = self;
-        [_scrollView addSubview:tableView];
+        [self.scrollView addSubview:tableView];
         [tableViews addObject:tableView]; // 存入临时tableView集合
         
         // 创建空数据view
@@ -89,12 +99,16 @@
     _collectionItemCount = count > kMaxCollectionItemCount ? kMaxCollectionItemCount : count;
     CGFloat itemWidth = CGRectGetWidth(_collectionView.frame) / _collectionItemCount;
     UILabel *selectedLine = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(_collectionView.frame) - 2.0, itemWidth, 2.0)];
-    selectedLine.backgroundColor = kColorRGB(54, 201, 251, 1);
+    selectedLine.backgroundColor = _selectedLineColor;
     [_collectionView addSubview:_selectedLine = selectedLine];
     
-    UILabel *collectionViewBottomLine = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(_collectionView.frame) - 0.5, itemWidth * count, 0.5)];
-    collectionViewBottomLine.backgroundColor = kColorRGB(232, 232, 232, 1);
-    [_collectionView addSubview:collectionViewBottomLine];
+//    UILabel *collectionViewTopLine = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, itemWidth * count, 0.5)];
+//    collectionViewTopLine.backgroundColor = kColorRGB(232, 232, 232, 1);
+//    [_collectionView addSubview:collectionViewTopLine];
+//    
+//    UILabel *collectionViewBottomLine = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetHeight(_collectionView.frame) - 0.5, itemWidth * count, 0.5)];
+//    collectionViewBottomLine.backgroundColor = kColorRGB(232, 232, 232, 1);
+//    [_collectionView addSubview:collectionViewBottomLine];
     
     _scrollView.contentSize = CGSizeMake(kScreenSize.width*count, CGRectGetHeight(_scrollView.frame));
 }
@@ -124,22 +138,30 @@
 
 #pragma mark 下拉刷新对外访问函数，提供tableView
 - (void)tableViewPullDownRefresh:(UITableView *)tableView {
-    NSLog(@"tableViewPullDownRefresh");
+    if ([self.delegate respondsToSelector:@selector(tableViewPullDownRefresh:)]) {
+        [self.delegate tableViewPullDownRefresh:tableView];
+    }
 }
 
 #pragma mark 上拉刷新对外访问函数，提供tableView
 - (void)tableViewPullUpRefresh:(UITableView *)tableView {
-    NSLog(@"tableViewPullUpRefresh");
+    if ([self.delegate respondsToSelector:@selector(tableViewPullUpRefresh:)]) {
+        [self.delegate tableViewPullUpRefresh:tableView];
+    }
 }
 
 #pragma mark tableVew网络访问错误触发函数
 - (void)tableView:(UITableView *)tableView networkReloadDataAction:(UIButton *)sender {
-    NSLog(@"ZWScrollTableViewCtrlViewController tableNetworkReloadDataAction");
+    if ([self.delegate respondsToSelector:@selector(tableView:networkReloadDataAction:)]) {
+        [self.delegate tableView:tableView networkReloadDataAction:sender];
+    }
 }
 
 #pragma mark 导航按钮触发函数
 - (void)headerBtnDidSelectAtIndex:(NSIndexPath *)indexPath {
-//    NSLog(@"ZWScrollTableViewCtrlViewController didSelectAtIndex at %@", indexPath);
+    if ([self.delegate respondsToSelector:@selector(headerBtnDidSelectAtIndex:)]) {
+        [self.delegate headerBtnDidSelectAtIndex:indexPath];
+    }
 }
 
 #pragma mark - ---delegate and datasource---
@@ -258,7 +280,11 @@
         collectionView.delegate = self;
         collectionView.dataSource = self;
         collectionView.showsHorizontalScrollIndicator = NO;
+        collectionView.layer.borderWidth = 0.5f;
+        collectionView.layer.borderColor = kColorRGB(232, 232, 232, 1).CGColor;
         [collectionView registerNib:[UINib nibWithNibName:@"WScrollHeaderCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"WScrollHeaderCollectionCell"];
+        [self.view addSubview:collectionView];
+        
         _collectionView = collectionView;
     }
     
@@ -272,6 +298,8 @@
         scrollView.pagingEnabled = YES;
         scrollView.showsHorizontalScrollIndicator = NO;
         scrollView.delegate = self;
+        [self.view addSubview:scrollView];
+        
         _scrollView = scrollView;
     }
     
@@ -289,18 +317,21 @@
     }
 }
 
+/** 导航按钮选中线颜色 **/
 - (void)setSelectedLineColor:(UIColor *)selectedLineColor {
     _selectedLineColor = selectedLineColor;
     
     _selectedLine.backgroundColor = selectedLineColor;
 }
 
+/** 导航按钮选中颜色 **/
 - (void)setSelectedNavTextColor:(UIColor *)selectedNavTextColor {
     _selectedNavTextColor = selectedNavTextColor;
     
     [_collectionView reloadData];
 }
 
+/** 导航按钮默认颜色 **/
 - (void)setNormalNavTextColor:(UIColor *)normalNavTextColor {
     _normalNavTextColor = normalNavTextColor;
     

@@ -6,12 +6,11 @@
 //  Copyright © 2016年 mac. All rights reserved.
 //
 
-#import "UIView+EmpyFalseDataView.h"
+#import "UIView+EmptyFailureView.h"
 #import <objc/runtime.h>
 
 #define kNetworkFailTip @"网络连接失败!"
 #define kEmptyTip @"当前没有更多的数据!"
-#define kServerFailTip  @"服务器无响应"
 // 图片路径
 #define kResourceName(file) [@"ResourceImages.bundle" stringByAppendingPathComponent:file]
 
@@ -176,6 +175,8 @@ static char networkReloadTipKey;
     [self getEmptyDataViewTipKey].text = tip;
     [[self getEmptyDataViewBtnKey] setTitle:btnString forState:UIControlStateNormal];
     [self setEmptyViewHidden:NO];
+    
+    [self getEmptyDataViewBtnKey].hidden = !btnString || [btnString isEqualToString:@""];
 }
 
 - (void)emptyButtonAddTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents {
@@ -328,6 +329,8 @@ static char networkReloadTipKey;
     [self getNetworkReloadTipKey].text = tip;
     [[self getNetworkReloadBtnKey] setTitle:btnString forState:UIControlStateNormal];
     [self setNetworkReloadViewHidden:NO];
+    
+//    [self getNetworkReloadBtnKey].hidden = !btnString || [btnString isEqualToString:@""];
 }
 
 - (void)networkReloadButtonAddTarget:(nullable id)target
@@ -335,6 +338,8 @@ static char networkReloadTipKey;
                     forControlEvents:(UIControlEvents)controlEvents {
     [[self getEmptyDataViewBtnKey] addTarget:target action:action forControlEvents:controlEvents];
 }
+
+#pragma mark - runtime set get
 
 // EmptyDataView
 

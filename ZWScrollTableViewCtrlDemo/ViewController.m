@@ -30,6 +30,10 @@
     
     [self updateWithNavTextNormalColor:kColorRGB(51, 51, 51, 1) andSelectColor:kColorRGB(219, 34, 52, 1)];
     self.selectedLineColor = kColorRGB(219, 34, 52, 1);
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self setUpTableViewAtCount:7 navTitles:@[@"按钮1", @"按钮2", @"按钮3", @"按钮4", @"按钮5", @"按钮6", @"按钮7"]];
+    });
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
