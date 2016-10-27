@@ -25,8 +25,8 @@
 		04B331AF1CF6F90C00127AC6 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331A91CF6F90C00127AC6 /* WebViewJavascriptBridge.m */; };
 		04B331B01CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331AB1CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m */; };
 		04B331B11CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331AD1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m */; };
-		04BFFE021CFD622300777909 /* AuthcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFFDFD1CFD622300777909 /* AuthcodeView.m */; };
-		04BFFE031CFD622300777909 /* IPAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFFDFF1CFD622300777909 /* IPAddresses.m */; };
+		04BA77471DC0417300763275 /* AuthcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA77431DC0417300763275 /* AuthcodeView.m */; };
+		04BA77481DC0417300763275 /* IPAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA77461DC0417300763275 /* IPAddresses.m */; };
 		04C231D91CEEF07400D27653 /* WScrollHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2319E1CEEF07400D27653 /* WScrollHeaderCollectionCell.m */; };
 		04C231DA1CEEF07400D27653 /* WScrollHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C2319F1CEEF07400D27653 /* WScrollHeaderCollectionCell.xib */; };
 		04C231DB1CEEF07400D27653 /* WBaseNavigationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231A11CEEF07400D27653 /* WBaseNavigationCtrl.m */; };
@@ -110,10 +110,10 @@
 		04B331AC1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		04B331AD1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		04B873601D0EBD650015D128 /* WConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WConstants.h; sourceTree = "<group>"; };
-		04BFFDFC1CFD622300777909 /* AuthcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthcodeView.h; sourceTree = "<group>"; };
-		04BFFDFD1CFD622300777909 /* AuthcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthcodeView.m; sourceTree = "<group>"; };
-		04BFFDFE1CFD622300777909 /* IPAddresses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddresses.h; sourceTree = "<group>"; };
-		04BFFDFF1CFD622300777909 /* IPAddresses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddresses.m; sourceTree = "<group>"; };
+		04BA77421DC0417300763275 /* AuthcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthcodeView.h; sourceTree = "<group>"; };
+		04BA77431DC0417300763275 /* AuthcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthcodeView.m; sourceTree = "<group>"; };
+		04BA77451DC0417300763275 /* IPAddresses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddresses.h; sourceTree = "<group>"; };
+		04BA77461DC0417300763275 /* IPAddresses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddresses.m; sourceTree = "<group>"; };
 		04C231991CEEE9E300D27653 /* ZWScrollTableViewCtrlDemo-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZWScrollTableViewCtrlDemo-prefix.pch"; sourceTree = "<group>"; };
 		04C2319D1CEEF07400D27653 /* WScrollHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WScrollHeaderCollectionCell.h; sourceTree = "<group>"; };
 		04C2319E1CEEF07400D27653 /* WScrollHeaderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WScrollHeaderCollectionCell.m; sourceTree = "<group>"; };
@@ -308,14 +308,30 @@
 			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
+		04BA77411DC0417300763275 /* AuthcodeView */ = {
+			isa = PBXGroup;
+			children = (
+				04BA77421DC0417300763275 /* AuthcodeView.h */,
+				04BA77431DC0417300763275 /* AuthcodeView.m */,
+			);
+			path = AuthcodeView;
+			sourceTree = "<group>";
+		};
+		04BA77441DC0417300763275 /* IPAddresses */ = {
+			isa = PBXGroup;
+			children = (
+				04BA77451DC0417300763275 /* IPAddresses.h */,
+				04BA77461DC0417300763275 /* IPAddresses.m */,
+			);
+			path = IPAddresses;
+			sourceTree = "<group>";
+		};
 		04BFFDFB1CFD622300777909 /* Venders */ = {
 			isa = PBXGroup;
 			children = (
+				04BA77411DC0417300763275 /* AuthcodeView */,
+				04BA77441DC0417300763275 /* IPAddresses */,
 				0442EFB91DBF653C00A8960B /* PLLAlertView */,
-				04BFFDFC1CFD622300777909 /* AuthcodeView.h */,
-				04BFFDFD1CFD622300777909 /* AuthcodeView.m */,
-				04BFFDFE1CFD622300777909 /* IPAddresses.h */,
-				04BFFDFF1CFD622300777909 /* IPAddresses.m */,
 			);
 			path = Venders;
 			sourceTree = "<group>";
@@ -641,13 +657,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04BFFE021CFD622300777909 /* AuthcodeView.m in Sources */,
 				04C231E71CEEF07400D27653 /* UIViewController+HUD.m in Sources */,
 				04C231FC1CEEF1F100D27653 /* AFHTTPRequestHelper.m in Sources */,
 				04C231EA1CEEF07400D27653 /* NSString+ThreeDES.m in Sources */,
 				04C231DD1CEEF07400D27653 /* WBaseTableViewCtrl.m in Sources */,
 				04C231DE1CEEF07400D27653 /* WBaseViewController.m in Sources */,
+				04BA77471DC0417300763275 /* AuthcodeView.m in Sources */,
 				0442EFB81DBEF10400A8960B /* NSString+MoneyFormat.m in Sources */,
+				04BA77481DC0417300763275 /* IPAddresses.m in Sources */,
 				04B331AF1CF6F90C00127AC6 /* WebViewJavascriptBridge.m in Sources */,
 				04B331B01CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m in Sources */,
 				04C231DF1CEEF07400D27653 /* WScrollTableViewCtrl.m in Sources */,
@@ -667,7 +684,6 @@
 				04C231E51CEEF07400D27653 /* UIView+EmptyFailureView.m in Sources */,
 				0442EFB61DBEF10400A8960B /* NSString+GenerateUuid.m in Sources */,
 				04C231DC1CEEF07400D27653 /* WBaseTabBarCtrl.m in Sources */,
-				04BFFE031CFD622300777909 /* IPAddresses.m in Sources */,
 				04C231E01CEEF07400D27653 /* NSDateComponents+Timestamp.m in Sources */,
 				04C231EB1CEEF07400D27653 /* RSAEncryptor.m in Sources */,
 				0442EFAB1DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.m in Sources */,
