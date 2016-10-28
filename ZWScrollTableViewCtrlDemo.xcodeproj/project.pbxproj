@@ -25,6 +25,9 @@
 		04B331AF1CF6F90C00127AC6 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331A91CF6F90C00127AC6 /* WebViewJavascriptBridge.m */; };
 		04B331B01CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331AB1CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m */; };
 		04B331B11CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331AD1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m */; };
+		04B6AC271DC3527600C08315 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04B6AC261DC3527600C08315 /* Security.framework */; };
+		04B6AC2F1DC3545700C08315 /* WQKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6AC2E1DC3545700C08315 /* WQKeyChain.m */; };
+		04B6AC321DC3549F00C08315 /* WQUserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6AC311DC3549F00C08315 /* WQUserDataManager.m */; };
 		04BA77471DC0417300763275 /* AuthcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA77431DC0417300763275 /* AuthcodeView.m */; };
 		04BA77481DC0417300763275 /* IPAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA77461DC0417300763275 /* IPAddresses.m */; };
 		04C231D91CEEF07400D27653 /* WScrollHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2319E1CEEF07400D27653 /* WScrollHeaderCollectionCell.m */; };
@@ -109,6 +112,11 @@
 		04B331AB1CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
 		04B331AC1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		04B331AD1CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		04B6AC261DC3527600C08315 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		04B6AC2D1DC3545700C08315 /* WQKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQKeyChain.h; sourceTree = "<group>"; };
+		04B6AC2E1DC3545700C08315 /* WQKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQKeyChain.m; sourceTree = "<group>"; };
+		04B6AC301DC3549F00C08315 /* WQUserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQUserDataManager.h; sourceTree = "<group>"; };
+		04B6AC311DC3549F00C08315 /* WQUserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQUserDataManager.m; sourceTree = "<group>"; };
 		04B873601D0EBD650015D128 /* WConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WConstants.h; sourceTree = "<group>"; };
 		04BA77421DC0417300763275 /* AuthcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthcodeView.h; sourceTree = "<group>"; };
 		04BA77431DC0417300763275 /* AuthcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthcodeView.m; sourceTree = "<group>"; };
@@ -174,6 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B6AC271DC3527600C08315 /* Security.framework in Frameworks */,
 				436066F40D2DA21F3B9B0610 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +317,17 @@
 			path = WebViewJavascriptBridge;
 			sourceTree = "<group>";
 		};
+		04B6AC2C1DC3543900C08315 /* WQKeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				04B6AC2D1DC3545700C08315 /* WQKeyChain.h */,
+				04B6AC2E1DC3545700C08315 /* WQKeyChain.m */,
+				04B6AC301DC3549F00C08315 /* WQUserDataManager.h */,
+				04B6AC311DC3549F00C08315 /* WQUserDataManager.m */,
+			);
+			path = WQKeyChain;
+			sourceTree = "<group>";
+		};
 		04BA77411DC0417300763275 /* AuthcodeView */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +349,7 @@
 		04BFFDFB1CFD622300777909 /* Venders */ = {
 			isa = PBXGroup;
 			children = (
+				04B6AC2C1DC3543900C08315 /* WQKeyChain */,
 				04BA77411DC0417300763275 /* AuthcodeView */,
 				04BA77441DC0417300763275 /* IPAddresses */,
 				0442EFB91DBF653C00A8960B /* PLLAlertView */,
@@ -465,6 +486,7 @@
 		7FAFAE0DA6AB4A9A8DE970C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04B6AC261DC3527600C08315 /* Security.framework */,
 				B1BDE65A4761F577A4E83116 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -664,6 +686,7 @@
 				04C231DE1CEEF07400D27653 /* WBaseViewController.m in Sources */,
 				04BA77471DC0417300763275 /* AuthcodeView.m in Sources */,
 				0442EFB81DBEF10400A8960B /* NSString+MoneyFormat.m in Sources */,
+				04B6AC2F1DC3545700C08315 /* WQKeyChain.m in Sources */,
 				04BA77481DC0417300763275 /* IPAddresses.m in Sources */,
 				04B331AF1CF6F90C00127AC6 /* WebViewJavascriptBridge.m in Sources */,
 				04B331B01CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m in Sources */,
@@ -684,6 +707,7 @@
 				04C231E51CEEF07400D27653 /* UIView+EmptyFailureView.m in Sources */,
 				0442EFB61DBEF10400A8960B /* NSString+GenerateUuid.m in Sources */,
 				04C231DC1CEEF07400D27653 /* WBaseTabBarCtrl.m in Sources */,
+				04B6AC321DC3549F00C08315 /* WQUserDataManager.m in Sources */,
 				04C231E01CEEF07400D27653 /* NSDateComponents+Timestamp.m in Sources */,
 				04C231EB1CEEF07400D27653 /* RSAEncryptor.m in Sources */,
 				0442EFAB1DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.m in Sources */,
