@@ -15,11 +15,6 @@
 		041E6F1D1CC6123B00E5070B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041E6F1B1CC6123B00E5070B /* LaunchScreen.storyboard */; };
 		041E6F281CC6123B00E5070B /* ZWScrollTableViewCtrlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F271CC6123B00E5070B /* ZWScrollTableViewCtrlDemoTests.m */; };
 		041E6F331CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041E6F321CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests.m */; };
-		0442EFAB1DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFAA1DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.m */; };
-		0442EFB51DBEF10400A8960B /* NSString+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFAE1DBEF10400A8960B /* NSString+CalculateSize.m */; };
-		0442EFB61DBEF10400A8960B /* NSString+GenerateUuid.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFB01DBEF10400A8960B /* NSString+GenerateUuid.m */; };
-		0442EFB71DBEF10400A8960B /* NSString+InvalidNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFB21DBEF10400A8960B /* NSString+InvalidNull.m */; };
-		0442EFB81DBEF10400A8960B /* NSString+MoneyFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFB41DBEF10400A8960B /* NSString+MoneyFormat.m */; };
 		0442EFBC1DBF653C00A8960B /* PLLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442EFBB1DBF653C00A8960B /* PLLAlertView.m */; };
 		04B331AE1CF6F90C00127AC6 /* WebViewJavascriptBridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 04B331A81CF6F90C00127AC6 /* WebViewJavascriptBridge.js.txt */; };
 		04B331AF1CF6F90C00127AC6 /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B331A91CF6F90C00127AC6 /* WebViewJavascriptBridge.m */; };
@@ -30,6 +25,17 @@
 		04B6AC321DC3549F00C08315 /* WQUserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6AC311DC3549F00C08315 /* WQUserDataManager.m */; };
 		04BA77471DC0417300763275 /* AuthcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA77431DC0417300763275 /* AuthcodeView.m */; };
 		04BA77481DC0417300763275 /* IPAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BA77461DC0417300763275 /* IPAddresses.m */; };
+		04BF20571DC72B1D0057F26C /* NSDateComponents+Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF203E1DC72B1D0057F26C /* NSDateComponents+Timestamp.m */; };
+		04BF20581DC72B1D0057F26C /* NSString+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF20411DC72B1D0057F26C /* NSString+CalculateSize.m */; };
+		04BF20591DC72B1D0057F26C /* NSString+GenerateUuid.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF20431DC72B1D0057F26C /* NSString+GenerateUuid.m */; };
+		04BF205A1DC72B1D0057F26C /* NSString+InvalidNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF20451DC72B1D0057F26C /* NSString+InvalidNull.m */; };
+		04BF205B1DC72B1D0057F26C /* NSString+MoneyFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF20471DC72B1D0057F26C /* NSString+MoneyFormat.m */; };
+		04BF205C1DC72B1D0057F26C /* UIImage+IMTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF204A1DC72B1D0057F26C /* UIImage+IMTransform.m */; };
+		04BF205D1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF204D1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground.m */; };
+		04BF205E1DC72B1D0057F26C /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF20501DC72B1D0057F26C /* UIScrollView+Refresh.m */; };
+		04BF205F1DC72B1D0057F26C /* UIView+EmptyFailureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF20531DC72B1D0057F26C /* UIView+EmptyFailureView.m */; };
+		04BF20601DC72B1D0057F26C /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF20561DC72B1D0057F26C /* UIViewController+HUD.m */; };
+		04BF20641DC72BA20057F26C /* UIViewController+TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF20631DC72BA20057F26C /* UIViewController+TransitionAnimation.m */; };
 		04C231D91CEEF07400D27653 /* WScrollHeaderCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C2319E1CEEF07400D27653 /* WScrollHeaderCollectionCell.m */; };
 		04C231DA1CEEF07400D27653 /* WScrollHeaderCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C2319F1CEEF07400D27653 /* WScrollHeaderCollectionCell.xib */; };
 		04C231DB1CEEF07400D27653 /* WBaseNavigationCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231A11CEEF07400D27653 /* WBaseNavigationCtrl.m */; };
@@ -37,11 +43,6 @@
 		04C231DD1CEEF07400D27653 /* WBaseTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231A51CEEF07400D27653 /* WBaseTableViewCtrl.m */; };
 		04C231DE1CEEF07400D27653 /* WBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231A71CEEF07400D27653 /* WBaseViewController.m */; };
 		04C231DF1CEEF07400D27653 /* WScrollTableViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231A91CEEF07400D27653 /* WScrollTableViewCtrl.m */; };
-		04C231E01CEEF07400D27653 /* NSDateComponents+Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231AC1CEEF07400D27653 /* NSDateComponents+Timestamp.m */; };
-		04C231E31CEEF07400D27653 /* UIImage+IMTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231B21CEEF07400D27653 /* UIImage+IMTransform.m */; };
-		04C231E41CEEF07400D27653 /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231B41CEEF07400D27653 /* UIScrollView+Refresh.m */; };
-		04C231E51CEEF07400D27653 /* UIView+EmptyFailureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231B61CEEF07400D27653 /* UIView+EmptyFailureView.m */; };
-		04C231E71CEEF07400D27653 /* UIViewController+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231BA1CEEF07400D27653 /* UIViewController+HUD.m */; };
 		04C231E81CEEF07400D27653 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231BD1CEEF07400D27653 /* GTMBase64.m */; };
 		04C231E91CEEF07400D27653 /* NSString+MD5Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231C01CEEF07400D27653 /* NSString+MD5Encrypt.m */; };
 		04C231EA1CEEF07400D27653 /* NSString+ThreeDES.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C231C21CEEF07400D27653 /* NSString+ThreeDES.m */; };
@@ -93,16 +94,6 @@
 		041E6F2E1CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWScrollTableViewCtrlDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041E6F321CC6123B00E5070B /* ZWScrollTableViewCtrlDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWScrollTableViewCtrlDemoUITests.m; sourceTree = "<group>"; };
 		041E6F341CC6123B00E5070B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0442EFA91DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavigationBarBackground.h"; sourceTree = "<group>"; };
-		0442EFAA1DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavigationBarBackground.m"; sourceTree = "<group>"; };
-		0442EFAD1DBEF10400A8960B /* NSString+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculateSize.h"; sourceTree = "<group>"; };
-		0442EFAE1DBEF10400A8960B /* NSString+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculateSize.m"; sourceTree = "<group>"; };
-		0442EFAF1DBEF10400A8960B /* NSString+GenerateUuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GenerateUuid.h"; sourceTree = "<group>"; };
-		0442EFB01DBEF10400A8960B /* NSString+GenerateUuid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GenerateUuid.m"; sourceTree = "<group>"; };
-		0442EFB11DBEF10400A8960B /* NSString+InvalidNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InvalidNull.h"; sourceTree = "<group>"; };
-		0442EFB21DBEF10400A8960B /* NSString+InvalidNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InvalidNull.m"; sourceTree = "<group>"; };
-		0442EFB31DBEF10400A8960B /* NSString+MoneyFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MoneyFormat.h"; sourceTree = "<group>"; };
-		0442EFB41DBEF10400A8960B /* NSString+MoneyFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MoneyFormat.m"; sourceTree = "<group>"; };
 		0442EFBA1DBF653C00A8960B /* PLLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLAlertView.h; sourceTree = "<group>"; };
 		0442EFBB1DBF653C00A8960B /* PLLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLLAlertView.m; sourceTree = "<group>"; };
 		04B331A71CF6F90C00127AC6 /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
@@ -122,6 +113,28 @@
 		04BA77431DC0417300763275 /* AuthcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthcodeView.m; sourceTree = "<group>"; };
 		04BA77451DC0417300763275 /* IPAddresses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddresses.h; sourceTree = "<group>"; };
 		04BA77461DC0417300763275 /* IPAddresses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddresses.m; sourceTree = "<group>"; };
+		04BF203D1DC72B1D0057F26C /* NSDateComponents+Timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+Timestamp.h"; sourceTree = "<group>"; };
+		04BF203E1DC72B1D0057F26C /* NSDateComponents+Timestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+Timestamp.m"; sourceTree = "<group>"; };
+		04BF20401DC72B1D0057F26C /* NSString+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculateSize.h"; sourceTree = "<group>"; };
+		04BF20411DC72B1D0057F26C /* NSString+CalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CalculateSize.m"; sourceTree = "<group>"; };
+		04BF20421DC72B1D0057F26C /* NSString+GenerateUuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GenerateUuid.h"; sourceTree = "<group>"; };
+		04BF20431DC72B1D0057F26C /* NSString+GenerateUuid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GenerateUuid.m"; sourceTree = "<group>"; };
+		04BF20441DC72B1D0057F26C /* NSString+InvalidNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InvalidNull.h"; sourceTree = "<group>"; };
+		04BF20451DC72B1D0057F26C /* NSString+InvalidNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InvalidNull.m"; sourceTree = "<group>"; };
+		04BF20461DC72B1D0057F26C /* NSString+MoneyFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MoneyFormat.h"; sourceTree = "<group>"; };
+		04BF20471DC72B1D0057F26C /* NSString+MoneyFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MoneyFormat.m"; sourceTree = "<group>"; };
+		04BF20491DC72B1D0057F26C /* UIImage+IMTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IMTransform.h"; sourceTree = "<group>"; };
+		04BF204A1DC72B1D0057F26C /* UIImage+IMTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IMTransform.m"; sourceTree = "<group>"; };
+		04BF204C1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NavigationBarBackground.h"; sourceTree = "<group>"; };
+		04BF204D1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NavigationBarBackground.m"; sourceTree = "<group>"; };
+		04BF204F1DC72B1D0057F26C /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
+		04BF20501DC72B1D0057F26C /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
+		04BF20521DC72B1D0057F26C /* UIView+EmptyFailureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyFailureView.h"; sourceTree = "<group>"; };
+		04BF20531DC72B1D0057F26C /* UIView+EmptyFailureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyFailureView.m"; sourceTree = "<group>"; };
+		04BF20551DC72B1D0057F26C /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
+		04BF20561DC72B1D0057F26C /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
+		04BF20621DC72BA20057F26C /* UIViewController+TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TransitionAnimation.h"; sourceTree = "<group>"; };
+		04BF20631DC72BA20057F26C /* UIViewController+TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TransitionAnimation.m"; sourceTree = "<group>"; };
 		04C231991CEEE9E300D27653 /* ZWScrollTableViewCtrlDemo-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZWScrollTableViewCtrlDemo-prefix.pch"; sourceTree = "<group>"; };
 		04C2319D1CEEF07400D27653 /* WScrollHeaderCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WScrollHeaderCollectionCell.h; sourceTree = "<group>"; };
 		04C2319E1CEEF07400D27653 /* WScrollHeaderCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WScrollHeaderCollectionCell.m; sourceTree = "<group>"; };
@@ -136,16 +149,6 @@
 		04C231A71CEEF07400D27653 /* WBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBaseViewController.m; sourceTree = "<group>"; };
 		04C231A81CEEF07400D27653 /* WScrollTableViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WScrollTableViewCtrl.h; sourceTree = "<group>"; };
 		04C231A91CEEF07400D27653 /* WScrollTableViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WScrollTableViewCtrl.m; sourceTree = "<group>"; };
-		04C231AB1CEEF07400D27653 /* NSDateComponents+Timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateComponents+Timestamp.h"; sourceTree = "<group>"; };
-		04C231AC1CEEF07400D27653 /* NSDateComponents+Timestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateComponents+Timestamp.m"; sourceTree = "<group>"; };
-		04C231B11CEEF07400D27653 /* UIImage+IMTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IMTransform.h"; sourceTree = "<group>"; };
-		04C231B21CEEF07400D27653 /* UIImage+IMTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IMTransform.m"; sourceTree = "<group>"; };
-		04C231B31CEEF07400D27653 /* UIScrollView+Refresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Refresh.h"; sourceTree = "<group>"; };
-		04C231B41CEEF07400D27653 /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
-		04C231B51CEEF07400D27653 /* UIView+EmptyFailureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EmptyFailureView.h"; sourceTree = "<group>"; };
-		04C231B61CEEF07400D27653 /* UIView+EmptyFailureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EmptyFailureView.m"; sourceTree = "<group>"; };
-		04C231B91CEEF07400D27653 /* UIViewController+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HUD.h"; sourceTree = "<group>"; };
-		04C231BA1CEEF07400D27653 /* UIViewController+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HUD.m"; sourceTree = "<group>"; };
 		04C231BC1CEEF07400D27653 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
 		04C231BD1CEEF07400D27653 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
 		04C231BE1CEEF07400D27653 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
@@ -270,30 +273,6 @@
 			path = ZWScrollTableViewCtrlDemoUITests;
 			sourceTree = "<group>";
 		};
-		0442EFA81DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground */ = {
-			isa = PBXGroup;
-			children = (
-				0442EFA91DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.h */,
-				0442EFAA1DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.m */,
-			);
-			path = "UINavigationBar+NavigationBarBackground";
-			sourceTree = "<group>";
-		};
-		0442EFAC1DBEF10400A8960B /* NSString+Category */ = {
-			isa = PBXGroup;
-			children = (
-				0442EFAD1DBEF10400A8960B /* NSString+CalculateSize.h */,
-				0442EFAE1DBEF10400A8960B /* NSString+CalculateSize.m */,
-				0442EFAF1DBEF10400A8960B /* NSString+GenerateUuid.h */,
-				0442EFB01DBEF10400A8960B /* NSString+GenerateUuid.m */,
-				0442EFB11DBEF10400A8960B /* NSString+InvalidNull.h */,
-				0442EFB21DBEF10400A8960B /* NSString+InvalidNull.m */,
-				0442EFB31DBEF10400A8960B /* NSString+MoneyFormat.h */,
-				0442EFB41DBEF10400A8960B /* NSString+MoneyFormat.m */,
-			);
-			path = "NSString+Category";
-			sourceTree = "<group>";
-		};
 		0442EFB91DBF653C00A8960B /* PLLAlertView */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,6 +325,99 @@
 			path = IPAddresses;
 			sourceTree = "<group>";
 		};
+		04BF203B1DC72B1D0057F26C /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				04BF20611DC72B660057F26C /* UIViewController+TransitionAnimation */,
+				04BF203C1DC72B1D0057F26C /* NSDateComponents+Timestamp */,
+				04BF203F1DC72B1D0057F26C /* NSString+Category */,
+				04BF20481DC72B1D0057F26C /* UIImage+IMTransform */,
+				04BF204B1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground */,
+				04BF204E1DC72B1D0057F26C /* UIScrollView+Refresh */,
+				04BF20511DC72B1D0057F26C /* UIView+EmptyFailureView */,
+				04BF20541DC72B1D0057F26C /* UIViewController+HUD */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		04BF203C1DC72B1D0057F26C /* NSDateComponents+Timestamp */ = {
+			isa = PBXGroup;
+			children = (
+				04BF203D1DC72B1D0057F26C /* NSDateComponents+Timestamp.h */,
+				04BF203E1DC72B1D0057F26C /* NSDateComponents+Timestamp.m */,
+			);
+			path = "NSDateComponents+Timestamp";
+			sourceTree = "<group>";
+		};
+		04BF203F1DC72B1D0057F26C /* NSString+Category */ = {
+			isa = PBXGroup;
+			children = (
+				04BF20401DC72B1D0057F26C /* NSString+CalculateSize.h */,
+				04BF20411DC72B1D0057F26C /* NSString+CalculateSize.m */,
+				04BF20421DC72B1D0057F26C /* NSString+GenerateUuid.h */,
+				04BF20431DC72B1D0057F26C /* NSString+GenerateUuid.m */,
+				04BF20441DC72B1D0057F26C /* NSString+InvalidNull.h */,
+				04BF20451DC72B1D0057F26C /* NSString+InvalidNull.m */,
+				04BF20461DC72B1D0057F26C /* NSString+MoneyFormat.h */,
+				04BF20471DC72B1D0057F26C /* NSString+MoneyFormat.m */,
+			);
+			path = "NSString+Category";
+			sourceTree = "<group>";
+		};
+		04BF20481DC72B1D0057F26C /* UIImage+IMTransform */ = {
+			isa = PBXGroup;
+			children = (
+				04BF20491DC72B1D0057F26C /* UIImage+IMTransform.h */,
+				04BF204A1DC72B1D0057F26C /* UIImage+IMTransform.m */,
+			);
+			path = "UIImage+IMTransform";
+			sourceTree = "<group>";
+		};
+		04BF204B1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground */ = {
+			isa = PBXGroup;
+			children = (
+				04BF204C1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground.h */,
+				04BF204D1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground.m */,
+			);
+			path = "UINavigationBar+NavigationBarBackground";
+			sourceTree = "<group>";
+		};
+		04BF204E1DC72B1D0057F26C /* UIScrollView+Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				04BF204F1DC72B1D0057F26C /* UIScrollView+Refresh.h */,
+				04BF20501DC72B1D0057F26C /* UIScrollView+Refresh.m */,
+			);
+			path = "UIScrollView+Refresh";
+			sourceTree = "<group>";
+		};
+		04BF20511DC72B1D0057F26C /* UIView+EmptyFailureView */ = {
+			isa = PBXGroup;
+			children = (
+				04BF20521DC72B1D0057F26C /* UIView+EmptyFailureView.h */,
+				04BF20531DC72B1D0057F26C /* UIView+EmptyFailureView.m */,
+			);
+			path = "UIView+EmptyFailureView";
+			sourceTree = "<group>";
+		};
+		04BF20541DC72B1D0057F26C /* UIViewController+HUD */ = {
+			isa = PBXGroup;
+			children = (
+				04BF20551DC72B1D0057F26C /* UIViewController+HUD.h */,
+				04BF20561DC72B1D0057F26C /* UIViewController+HUD.m */,
+			);
+			path = "UIViewController+HUD";
+			sourceTree = "<group>";
+		};
+		04BF20611DC72B660057F26C /* UIViewController+TransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				04BF20621DC72BA20057F26C /* UIViewController+TransitionAnimation.h */,
+				04BF20631DC72BA20057F26C /* UIViewController+TransitionAnimation.m */,
+			);
+			path = "UIViewController+TransitionAnimation";
+			sourceTree = "<group>";
+		};
 		04BFFDFB1CFD622300777909 /* Venders */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,10 +434,10 @@
 			children = (
 				04C231D81CEEF07400D27653 /* WBaseFoundation.h */,
 				04B873601D0EBD650015D128 /* WConstants.h */,
+				04BF203B1DC72B1D0057F26C /* Categorys */,
 				04BFFDFB1CFD622300777909 /* Venders */,
 				04B331A61CF6F90C00127AC6 /* WebViewJavascriptBridge */,
 				04C2319B1CEEF07400D27653 /* Base */,
-				04C231AA1CEEF07400D27653 /* Categorys */,
 				04C231BB1CEEF07400D27653 /* EncryptArithmetic */,
 				04C231C51CEEF07400D27653 /* Menu */,
 				04C231F61CEEF1F100D27653 /* HTTPManager */,
@@ -400,25 +472,6 @@
 				04C2319F1CEEF07400D27653 /* WScrollHeaderCollectionCell.xib */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		04C231AA1CEEF07400D27653 /* Categorys */ = {
-			isa = PBXGroup;
-			children = (
-				0442EFAC1DBEF10400A8960B /* NSString+Category */,
-				0442EFA81DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground */,
-				04C231AB1CEEF07400D27653 /* NSDateComponents+Timestamp.h */,
-				04C231AC1CEEF07400D27653 /* NSDateComponents+Timestamp.m */,
-				04C231B11CEEF07400D27653 /* UIImage+IMTransform.h */,
-				04C231B21CEEF07400D27653 /* UIImage+IMTransform.m */,
-				04C231B31CEEF07400D27653 /* UIScrollView+Refresh.h */,
-				04C231B41CEEF07400D27653 /* UIScrollView+Refresh.m */,
-				04C231B51CEEF07400D27653 /* UIView+EmptyFailureView.h */,
-				04C231B61CEEF07400D27653 /* UIView+EmptyFailureView.m */,
-				04C231B91CEEF07400D27653 /* UIViewController+HUD.h */,
-				04C231BA1CEEF07400D27653 /* UIViewController+HUD.m */,
-			);
-			path = Categorys;
 			sourceTree = "<group>";
 		};
 		04C231BB1CEEF07400D27653 /* EncryptArithmetic */ = {
@@ -679,43 +732,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C231E71CEEF07400D27653 /* UIViewController+HUD.m in Sources */,
 				04C231FC1CEEF1F100D27653 /* AFHTTPRequestHelper.m in Sources */,
+				04BF20591DC72B1D0057F26C /* NSString+GenerateUuid.m in Sources */,
 				04C231EA1CEEF07400D27653 /* NSString+ThreeDES.m in Sources */,
 				04C231DD1CEEF07400D27653 /* WBaseTableViewCtrl.m in Sources */,
 				04C231DE1CEEF07400D27653 /* WBaseViewController.m in Sources */,
+				04BF205B1DC72B1D0057F26C /* NSString+MoneyFormat.m in Sources */,
 				04BA77471DC0417300763275 /* AuthcodeView.m in Sources */,
-				0442EFB81DBEF10400A8960B /* NSString+MoneyFormat.m in Sources */,
 				04B6AC2F1DC3545700C08315 /* WQKeyChain.m in Sources */,
+				04BF205C1DC72B1D0057F26C /* UIImage+IMTransform.m in Sources */,
+				04BF205D1DC72B1D0057F26C /* UINavigationBar+NavigationBarBackground.m in Sources */,
 				04BA77481DC0417300763275 /* IPAddresses.m in Sources */,
 				04B331AF1CF6F90C00127AC6 /* WebViewJavascriptBridge.m in Sources */,
 				04B331B01CF6F90C00127AC6 /* WebViewJavascriptBridgeBase.m in Sources */,
 				04C231DF1CEEF07400D27653 /* WScrollTableViewCtrl.m in Sources */,
 				04C231E91CEEF07400D27653 /* NSString+MD5Encrypt.m in Sources */,
-				0442EFB71DBEF10400A8960B /* NSString+InvalidNull.m in Sources */,
 				04C231F21CEEF07400D27653 /* WMenuTableViewCtrl.m in Sources */,
 				04B331B11CF6F90C00127AC6 /* WKWebViewJavascriptBridge.m in Sources */,
 				04C231DB1CEEF07400D27653 /* WBaseNavigationCtrl.m in Sources */,
-				04C231E41CEEF07400D27653 /* UIScrollView+Refresh.m in Sources */,
+				04BF205F1DC72B1D0057F26C /* UIView+EmptyFailureView.m in Sources */,
 				04C231FB1CEEF1F100D27653 /* AFHTTPRequest.m in Sources */,
+				04BF205E1DC72B1D0057F26C /* UIScrollView+Refresh.m in Sources */,
 				0442EFBC1DBF653C00A8960B /* PLLAlertView.m in Sources */,
 				04C231E81CEEF07400D27653 /* GTMBase64.m in Sources */,
 				04C231F11CEEF07400D27653 /* WFrostedRootViewCtrl.m in Sources */,
 				04C231EF1CEEF07400D27653 /* MenuTableHeaderView.m in Sources */,
+				04BF20571DC72B1D0057F26C /* NSDateComponents+Timestamp.m in Sources */,
 				041E6F151CC6123B00E5070B /* ViewController.m in Sources */,
 				041E6F121CC6123B00E5070B /* AppDelegate.m in Sources */,
-				04C231E51CEEF07400D27653 /* UIView+EmptyFailureView.m in Sources */,
-				0442EFB61DBEF10400A8960B /* NSString+GenerateUuid.m in Sources */,
+				04BF20581DC72B1D0057F26C /* NSString+CalculateSize.m in Sources */,
+				04BF205A1DC72B1D0057F26C /* NSString+InvalidNull.m in Sources */,
 				04C231DC1CEEF07400D27653 /* WBaseTabBarCtrl.m in Sources */,
+				04BF20641DC72BA20057F26C /* UIViewController+TransitionAnimation.m in Sources */,
+				04BF20601DC72B1D0057F26C /* UIViewController+HUD.m in Sources */,
 				04B6AC321DC3549F00C08315 /* WQUserDataManager.m in Sources */,
-				04C231E01CEEF07400D27653 /* NSDateComponents+Timestamp.m in Sources */,
 				04C231EB1CEEF07400D27653 /* RSAEncryptor.m in Sources */,
-				0442EFAB1DBEF0BD00A8960B /* UINavigationBar+NavigationBarBackground.m in Sources */,
 				04C231EC1CEEF07400D27653 /* MenuTableViewCell.m in Sources */,
 				041E6F0F1CC6123B00E5070B /* main.m in Sources */,
 				04C231D91CEEF07400D27653 /* WScrollHeaderCollectionCell.m in Sources */,
-				04C231E31CEEF07400D27653 /* UIImage+IMTransform.m in Sources */,
-				0442EFB51DBEF10400A8960B /* NSString+CalculateSize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
