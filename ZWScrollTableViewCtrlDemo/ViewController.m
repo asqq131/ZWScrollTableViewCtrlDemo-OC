@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "WQUserDataManager.h"
 
 @interface ViewController ()
 
@@ -19,22 +18,29 @@
     [super viewDidLoad];
     
 //    [self setUpTableViewAtCount:6];
-    [self setUpTableViewAtCount:6 navTitles:@[@"按钮1", @"按钮2", @"按钮3", @"按钮4", @"按钮5", @"按钮6"]];
+    [self setUpWithNavTitles:@[@"按钮1", @"按钮2", @"按钮3", @"按钮4", @"按钮5", @"按钮6"]];
     
 //    [self.tableViews[0] setNetworkReloadViewHidden:NO];
 //    [self.tableViews[1] setEmptyViewHidden:NO];
 //    [self.tableViews[0] showEmptyViewWithTip:@"hello word" btnString:@"取消"];
     
-    [self setupPullDownRefreshWith:self.tableViews[0]];
+//    [self setupPullDownRefreshWith:self.tableViews[0]];
     [self setupPullUpRefreshWith:self.tableViews[1]];
-    [[self.tableViews[0] mj_header] beginRefreshing];
+//    [[self.tableViews[0] mj_header] beginRefreshing];
     
     [self updateWithNavTextNormalColor:kColorRGB(51, 51, 51, 1) andSelectColor:kColorRGB(219, 34, 52, 1)];
     self.selectedLineColor = kColorRGB(219, 34, 52, 1);
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self setUpTableViewAtCount:7 navTitles:@[@"按钮1", @"按钮2", @"按钮3", @"按钮4", @"按钮5", @"按钮6", @"按钮7"]];
+        
     });
+    
+    // UIRefreshControl
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl setAttributedTitle:[[NSAttributedString alloc] initWithString:@"加载中..."]];
+    [refreshControl setTintColor:[UIColor redColor]];
+    [refreshControl addTarget:self action:@selector(refreshControlAction:) forControlEvents:UIControlEventValueChanged];
+    [self.tableViews[0] addSubview:refreshControl];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -86,6 +92,12 @@
 
 - (void)tableView:(UITableView *)tableView networkReloadDataAction:(UIButton *)sender {
     [tableView.mj_header beginRefreshing];
+}
+
+- (void)refreshControlAction:(UIRefreshControl*)refreshControl {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [refreshControl endRefreshing];
+    });
 }
 
 @end
