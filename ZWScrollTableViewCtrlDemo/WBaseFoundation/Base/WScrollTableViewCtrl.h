@@ -10,19 +10,19 @@
 #import "UIScrollView+Refresh.h"
 #import "UIView+EmptyFailureView.h"
 
-@protocol WScrollTableViewCtrlDelegate <NSObject>
-
-/** 导航按钮触发函数 **/
-//- (void)headerBtn:(UIButton *)sender didSelectAtIndex:(NSInteger)index;
-- (void)headerBtnDidSelectAtIndex:(NSIndexPath *)indexPath;
-/** 网络访问失败触发函数 **/
-- (void)tableView:(UITableView *)tableView networkReloadDataAction:(UIButton *)sender;
-/** tableView下拉触发函数 **/
-- (void)tableViewPullDownRefresh:(UITableView *)tableView;
-/** tableView上拉触发函数 **/
-- (void)tableViewPullUpRefresh:(UITableView *)tableView;
-
-@end
+//@protocol WScrollTableViewCtrlDelegate <NSObject>
+//
+///** 导航按钮触发函数 **/
+////- (void)headerBtn:(UIButton *)sender didSelectAtIndex:(NSInteger)index;
+//- (void)headerBtnDidSelectAtIndex:(NSIndexPath *)indexPath;
+///** 网络访问失败触发函数 **/
+//- (void)tableView:(UITableView *)tableView networkReloadDataAction:(UIButton *)sender;
+///** tableView下拉触发函数 **/
+//- (void)tableViewPullDownRefresh:(UITableView *)tableView;
+///** tableView上拉触发函数 **/
+//- (void)tableViewPullUpRefresh:(UITableView *)tableView;
+//
+//@end
 
 @interface WScrollTableViewCtrl : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
@@ -49,7 +49,7 @@
 /** 导航按钮默认颜色 **/
 @property (nonatomic) UIColor *normalNavTextColor;
 
-@property (nonatomic, weak) id<WScrollTableViewCtrlDelegate>delegate;
+//@property (nonatomic, weak) id<WScrollTableViewCtrlDelegate>delegate;
 
 /** 根据count初始化所需tableView和导航按钮 **/
 - (void)setUpTableViewAtCount:(NSInteger)count;

@@ -136,30 +136,30 @@
 
 #pragma mark 下拉刷新对外访问函数，提供tableView
 - (void)tableViewPullDownRefresh:(UITableView *)tableView {
-    if ([self.delegate respondsToSelector:@selector(tableViewPullDownRefresh:)]) {
-        [self.delegate tableViewPullDownRefresh:tableView];
-    }
+//    if ([self.delegate respondsToSelector:@selector(tableViewPullDownRefresh:)]) {
+//        [self.delegate tableViewPullDownRefresh:tableView];
+//    }
 }
 
 #pragma mark 上拉刷新对外访问函数，提供tableView
 - (void)tableViewPullUpRefresh:(UITableView *)tableView {
-    if ([self.delegate respondsToSelector:@selector(tableViewPullUpRefresh:)]) {
-        [self.delegate tableViewPullUpRefresh:tableView];
-    }
+//    if ([self.delegate respondsToSelector:@selector(tableViewPullUpRefresh:)]) {
+//        [self.delegate tableViewPullUpRefresh:tableView];
+//    }
 }
 
 #pragma mark tableVew网络访问错误触发函数
 - (void)tableView:(UITableView *)tableView networkReloadDataAction:(UIButton *)sender {
-    if ([self.delegate respondsToSelector:@selector(tableView:networkReloadDataAction:)]) {
-        [self.delegate tableView:tableView networkReloadDataAction:sender];
-    }
+//    if ([self.delegate respondsToSelector:@selector(tableView:networkReloadDataAction:)]) {
+//        [self.delegate tableView:tableView networkReloadDataAction:sender];
+//    }
 }
 
 #pragma mark 导航按钮触发函数
 - (void)headerBtnDidSelectAtIndex:(NSIndexPath *)indexPath {
-    if ([self.delegate respondsToSelector:@selector(headerBtnDidSelectAtIndex:)]) {
-        [self.delegate headerBtnDidSelectAtIndex:indexPath];
-    }
+//    if ([self.delegate respondsToSelector:@selector(headerBtnDidSelectAtIndex:)]) {
+//        [self.delegate headerBtnDidSelectAtIndex:indexPath];
+//    }
 }
 
 #pragma mark - ---delegate and datasource---
